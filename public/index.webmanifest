@@ -1,9 +1,9 @@
 {
-  "name": "Name",
-  "short_name": "Name",
+  "name": "Nome Cognome",
+  "short_name": "Nome Cognome",
   "lang": "en-us",
-  "theme_color": "#2962ff",
-  "background_color": "#2962ff",
+  "theme_color": "#C0392B",
+  "background_color": "#C0392B",
   "icons": [{
     "src": "../img/icon-192.png",
     "sizes": "192x192",

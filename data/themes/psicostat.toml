@@ -1,0 +1,18 @@
+# Theme metadata
+name = "psicostat"
+
+# Is theme light or dark?
+light = true
+
+# Primary
+primary = "#C0392B" # questo è il colore delle icone, delle scritte principali
+
+# Menu
+menu_primary = "#E1E1E1" # questo è lo sfondo della striscia dietro al logo
+menu_text = "#000000"
+menu_text_active = "#000000"
+menu_title = "#2b2b2b"
+
+# Home sections
+home_section_odd = "rgb(255, 255, 255)"
+home_section_even = "rgb(247, 247, 247)"

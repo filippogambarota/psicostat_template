@@ -1,0 +1,11 @@
+# Font style metadata
+name = "psicostat"
+
+# Optional Google font URL
+google_fonts = "Roboto:500,400|Roboto:400,400italic,700|Roboto+Mono|Roboto+Slab:600"
+
+# Font families
+heading_font = "Roboto"
+body_font = "Roboto"
+nav_font = "Roboto+Slab"
+mono_font = "Roboto Mono"

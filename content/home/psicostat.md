@@ -4,7 +4,7 @@
 widget = "blank"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
-weight = 100  # Order that this section will appear.
+weight = 120  # Order that this section will appear.
 
 title = "[Psicostat](http://ip146179.psy.unipd.it/psicostat/web/index.html?fbclid=IwAR1F8-gDhqlNPFTFJZLgSeMwSQoQRzEwijU5mAPdSGjEH-bNvFjgv6O82Rg)"
 subtitle = "We are an interdisciplinary research group interested in **Psychology** and **Statistics** working at the University of Padua."

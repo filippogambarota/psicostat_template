@@ -37,6 +37,13 @@ social:
 - icon: github
   icon_pack: fab
   link: https://github.com/gcushen
+- icon: researchgate
+  icon_pack: fab
+  link: https://www.researchgate.net
+- icon: orcid
+  icon_pack: fab
+  link: https://orcid.org/
+
 superuser: true
 user_groups:
 - Researchers

@@ -2,11 +2,11 @@
   - [What do we need?](#what-do-we-need)
 - [Step by Step Guide](#step-by-step-guide)
   - [1. One-click installer](#1-one-click-installer)
-  - [2. Forking and Connecting with Netlify](#2-forking-and-connecting-with-netlify)
+  - [2. Forking and Cloning](#2-forking-and-cloning)
     - [1. Forking the repository](#1-forking-the-repository)
-      - [Customize la repository](#customize-la-repository)
+      - [Customize the repository](#customize-the-repository)
     - [2. Cloning locally](#2-cloning-locally)
-  - [2. Deploying the website](#2-deploying-the-website)
+    - [2. Deploying the website](#2-deploying-the-website)
 - [How to manage the website?](#how-to-manage-the-website)
   - [Website Structure](#website-structure)
   - [First modifications](#first-modifications)
@@ -46,13 +46,13 @@ Ci sono due modalità per creare il proprio sito partendo dal template creato:
 
 Sostanzialmente cliccando su [questo link](https://app.netlify.com/start/deploy?repository=https://github.com/filippogambarota/psicostat_template) Netlify crea automaticamente un sito basato sulla repository `filippogambarota/psicostat_template`. Quindi è sufficiente avere un account Netlify fare il login e seguire gli step del link. A questo punto è sufficiente [clonare la repository localmente](#2-cloning-locally) e passare direttamente al paragrafo su come [gestire il sito](#how-to-manage-the-website).
 
-## 2. Forking and Connecting with Netlify
+## 2. Forking and Cloning
 
 ### 1. Forking the repository
 
 La prima cosa da fare è copiare la repository sul proprio account Github. Quando sei loggato a Github vai su questa repository [psicostat_template](https://github.com/filippogambarota/psicostat_template) e premi il pulsante `fork` in alto a destra. In questo modo avrai una copia esatta del template sul tuo account personale.
 
-#### Customize la repository
+#### Customize the repository
 
 E' possibile anche rinominare la tua repository in modo da avere `username/repository_name`. Un consiglio è anche quello di mettere la repository come **privata** perchè potrebbe essere che dovrai mettere alcuni dati sensibili online. Credo sia possibile gestire in modo avanzato quali file sincronizzare online e quali no ma potrebbe anche corrompere in qualche modo la struttura del sito.
 
@@ -72,7 +72,7 @@ hugo server
 
 Questo comando serve a costruire il sito e verificare che non ci siano errori o file corrotti. Se tutto va bene vi darà un messaggio di conferma assieme ad un'indirizzo locale da copiare e incollare nel browser per visualizzare una copia offline del sito. Questo comando sarà inoltre utile perchè si aggiorna in tempo reale a seconda delle modifiche al sito in modo da vedere subito il risultato.
 
-## 2. Deploying the website
+### 2. Deploying the website
 
 L'ultimo passo per avere il sito correttamente online è quello di connettere la nostra repository su Github al nostro account Netlify. Netlify è un servizio di hosting gratuito (fino ad un certo traffico e con funzioni base) perfettamente integrato con Hugo e il tema Academic. Per connettere la nostra repository semplicemente cliccare (in figura) `new site from Git`.
 

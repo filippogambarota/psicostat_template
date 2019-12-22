@@ -10,9 +10,9 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="266.83643mm"
-   height="147.99525mm"
-   viewBox="0 0 266.83642 147.99525"
+   width="329.67749mm"
+   height="329.67749mm"
+   viewBox="0 0 329.67748 329.67748"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
@@ -278,9 +278,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.46703154"
-     inkscape:cx="941.51358"
-     inkscape:cy="117.10257"
+     inkscape:zoom="0.17308444"
+     inkscape:cx="2190.6135"
+     inkscape:cy="1256.7301"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -306,7 +306,7 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Background"
-     transform="translate(748.32729,-160.25784)">
+     transform="translate(825.0719,-345.00403)">
     <g
        id="layer2-0"
        inkscape:label="background"
@@ -327,26 +327,33 @@
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="Hex"
-     transform="translate(748.32729,-160.25784)" />
+     transform="translate(825.0719,-345.00403)" />
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(748.32729,-160.25784)">
+     transform="translate(825.0719,-345.00403)">
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:42.33333206px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#b51f26;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       x="-752.2547"
-       y="249.64471"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:49.24505997px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#b51f26;fill-opacity:1;stroke:none;stroke-width:2.32653832;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       x="-786.66504"
+       y="527.74463"
        id="text962"><tspan
          sodipodi:role="line"
          id="tspan960"
-         x="-752.2547"
-         y="249.64471"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:42.33333206px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#b51f26;fill-opacity:1;stroke-width:2">PSICOSTAT</tspan></text>
+         x="-786.66504"
+         y="527.74463"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:49.24505997px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#b51f26;fill-opacity:1;stroke-width:2.32653832">PSICOSTAT</tspan></text>
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="rect875"
+       width="329.67749"
+       height="329.67749"
+       x="-825.0719"
+       y="345.00403" />
     <g
        id="g963"
-       transform="translate(-594.9031,14.683756)">
+       transform="matrix(1.4374795,0,0,1.6941851,-633.07233,135.14614)">
       <g
          style="opacity:0.2;fill:none;fill-opacity:0.16017318;stroke:#c81f1f;stroke-opacity:1"
          transform="matrix(0.88827922,0,0,0.88827922,-19.81968,11.70334)"

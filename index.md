@@ -1,9 +1,11 @@
-- [Come creare il sito web?](#come-creare-il-sito-web)
-  - [Cosa ci serve?](#cosa-ci-serve)
+- [How to create the website?](#how-to-create-the-website)
+  - [What do we need?](#what-do-we-need)
 - [Step by Step Guide](#step-by-step-guide)
-  - [1. Forking the repository](#1-forking-the-repository)
-    - [Personalizzare la repository](#personalizzare-la-repository)
-  - [2. Cloning locally](#2-cloning-locally)
+  - [1. One-click installer](#1-one-click-installer)
+  - [2. Forking and Connecting with Netlify](#2-forking-and-connecting-with-netlify)
+    - [1. Forking the repository](#1-forking-the-repository)
+      - [Customize la repository](#customize-la-repository)
+    - [2. Cloning locally](#2-cloning-locally)
   - [2. Deploying the website](#2-deploying-the-website)
 - [How to manage the website?](#how-to-manage-the-website)
   - [Website Structure](#website-structure)
@@ -15,7 +17,7 @@
     - [Save and upload all modifications](#save-and-upload-all-modifications)
       - [Commit](#commit)
 
-# Come creare il sito web?
+# How to create the website?
 
 Nella mia [breve introduzione](https://github.com/filippogambarota/hugo_tutorial) ad Hugo avevo suggerito di utilizzare **blogdown** e quindi RStudio per creare da zero il sito. Tuttavia essendo che partiremo da un **template modificato** utilizzeremo un approccio leggermente diverso.
 Questo template è un semplice adattamento del tema **Academic** con alcune modifiche estetiche e di struttura:
@@ -26,7 +28,7 @@ Questo template è un semplice adattamento del tema **Academic** con alcune modi
 
 Inoltre molte funzioni e link sono stati rimossi (o meglio semplicemente disattivati) per semplificare l'interfaccia ed il funzionamento. Tuttavia il bello di questo framework è la totale personalizzazione, pur partendo però da un template semplice.
 
-## Cosa ci serve?
+## What do we need?
 
 * [GIT](https://git-scm.com/) and [Hugo](https://gohugo.io/) installed on the PC
 * A [Github](https://github.com/) account
@@ -35,15 +37,26 @@ Inoltre molte funzioni e link sono stati rimossi (o meglio semplicemente disatti
 
 # Step by Step Guide
 
-## 1. Forking the repository
+Ci sono due modalità per creare il proprio sito partendo dal template creato:
+
+1. One-click installer (facile e automatica)
+2. Copiare la repository e connetterla con Netlify (qualche passaggio in più)
+
+## 1. One-click installer
+
+Sostanzialmente cliccando su [questo link](https://app.netlify.com/start/deploy?repository=https://github.com/filippogambarota/psicostat_template) Netlify crea automaticamente un sito basato sulla repository `filippogambarota/psicostat_template`. Quindi è sufficiente avere un account Netlify fare il login e seguire gli step del link. A questo punto è sufficiente [clonare la repository localmente](#2-cloning-locally) e passare direttamente al paragrafo su come [gestire il sito](#how-to-manage-the-website).
+
+## 2. Forking and Connecting with Netlify
+
+### 1. Forking the repository
 
 La prima cosa da fare è copiare la repository sul proprio account Github. Quando sei loggato a Github vai su questa repository [psicostat_template](https://github.com/filippogambarota/psicostat_template) e premi il pulsante `fork` in alto a destra. In questo modo avrai una copia esatta del template sul tuo account personale.
 
-### Personalizzare la repository
+#### Customize la repository
 
 E' possibile anche rinominare la tua repository in modo da avere `username/repository_name`. Un consiglio è anche quello di mettere la repository come **privata** perchè potrebbe essere che dovrai mettere alcuni dati sensibili online. Credo sia possibile gestire in modo avanzato quali file sincronizzare online e quali no ma potrebbe anche corrompere in qualche modo la struttura del sito.
 
-## 2. Cloning locally
+### 2. Cloning locally
 
 Ora dobbiamo fare una copia locale del sito che sara gestita tramite GIT e già collegata a Github così tutte le modifiche saranno automaticamente caricate su Github. Per clonare localmente la repository è sufficiente aprire il terminale (`cmd` o `powershell` su Windows), navigare sulla cartella in cui si vuole copiare il sito e digitare:
 

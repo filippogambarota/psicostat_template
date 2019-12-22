@@ -30,7 +30,7 @@
 
 [[main]]
   name = "Psicostat"
-  url = "http://ip146179.psy.unipd.it/psicostat/web/index.html?fbclid=IwAR1F8-gDhqlNPFTFJZLgSeMwSQoQRzEwijU5mAPdSGjEH-bNvFjgv6O82Rg"
+  url = "#psicostat"
   weight = 70
 
 # Link to a PDF of your resume/CV from the menu.

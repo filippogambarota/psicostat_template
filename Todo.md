@@ -5,4 +5,4 @@
 - [ ] Sezione teaching per i prof
 - [ ] sezioni post, publication e poster come su [https://www.jepusto.com](https://www.jepusto.com)
 - [ ] Rivedere sezioni Accomplish­ments, Experience e Projects
-- [ ] Togliere logo psicostat
+- [x] Togliere logo psicostat

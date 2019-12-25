@@ -1,10 +1,11 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "Prova2"
-event:
+title: "Titolo Poster"
+type: "poster"
+event: "RStudio::Conf 2020"
 event_url:
-location:
+location: "California"
 address:
   street:
   city:
@@ -16,15 +17,15 @@ abstract:
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: 2019-12-24T19:41:13+01:00
-date_end: 2019-12-24T19:41:13+01:00
+date: 2019-12-25T09:57:58+01:00
+date_end: 2019-12-25T09:57:58+01:00
 all_day: false
 
 # Schedule page publish date (NOT talk date).
-publishDate: 2019-12-24T19:41:13+01:00
+publishDate: 2019-12-25T09:57:58+01:00
 
 authors: []
-tags: [poster]
+tags: []
 
 # Is this a featured talk? (true/false)
 featured: false

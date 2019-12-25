@@ -31,7 +31,7 @@ projects:
 publishDate: "2017-01-01T00:00:00Z"
 slides: example
 summary: An example talk using Academic's Markdown slides feature.
-tags: []
+tags: [talk]
 title: Example Talk
 url_code: ""
 url_pdf: ""

@@ -1,16 +1,16 @@
 +++
 # A Projects section created with the Portfolio widget.
 widget = "portfolio"  # See https://sourcethemes.com/academic/docs/page-builder/
-headless = false  # This file represents a page section.
-active = false  # Activate this widget? true/false
+headless = true  # This file represents a page section.
+active = true  # Activate this widget? true/false
 weight = 90  # Order that this section will appear.
 
-title = "Projects"
+title = "Teaching"
 subtitle = ""
 
 [content]
   # Page type to display. E.g. project.
-  page_type = "project"
+  page_type = "teaching"
   
   # Filter toolbar (optional).
   # Add or remove as many filters (`[[content.filter_button]]` instances) as you like.
@@ -21,17 +21,22 @@ subtitle = ""
   # Default filter index (e.g. 0 corresponds to the first `[[filter_button]]` instance below).
   filter_default = 0
   
+# Questo è il widget degli insegnamenti con la funzione di filtraggio dei contenuti
+# un consiglio è quello di mettere un filtro per anno così da avere graficamente la divisione
+# basta copiare uno di questi filtri sotto cambiando "name" e "tag" con l'anno.
+# se nel singolo insegnamento si mette il tag corrispondente allora i contenuti vengono filtrati
+  
   [[content.filter_button]]
     name = "All"
     tag = "*"
   
   [[content.filter_button]]
-    name = "Deep Learning"
-    tag = "Deep Learning"
+    name = "2019"
+    tag = "2019"
   
   [[content.filter_button]]
-    name = "Other"
-    tag = "Demo"
+    name = "2020"
+    tag = "2020"
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.
@@ -42,7 +47,7 @@ subtitle = ""
   #   2 = Compact
   #   3 = Card
   #   5 = Showcase
-  view = 3
+  view = 1
 
   # For Showcase view, flip alternate rows?
   flip_alt_rows = false

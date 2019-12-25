@@ -14,28 +14,33 @@
   weight = 20
 
 [[main]]
-  name = "Posters and Talks"
-  url = "#talks"
+  name = "Posters"
+  url = "#posters"
   weight = 30
 
 [[main]]
-  name = "Projects"
-  url = "#projects"
+  name = "Talks"
+  url = "#talks"
   weight = 40
 
 [[main]]
-  name = "Psicostat"
-  url = "#psicostat"
+  name = "Teaching"
+  url = "#teaching"
   weight = 50
 
 [[main]]
   name = "Contact"
   url = "#contact"
-  weight = 70
+  weight = 60
+
+[[main]]
+  name = "Psicostat"
+  url = "psicostat"
+  weight = 80
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 [[main]]
     name = "CV"
     url = "files/cv.pdf"
-    weight = 60
+    weight = 70

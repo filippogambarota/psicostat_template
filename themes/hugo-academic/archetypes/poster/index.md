@@ -3,6 +3,7 @@
 
 title: "{{ replace .Name "-" " " | title }}"
 event:
+type: "poster"
 event_url:
 location:
 address:
@@ -24,7 +25,7 @@ all_day: false
 publishDate: {{ .Date }}
 
 authors: []
-tags: [poster]
+tags: []
 
 # Is this a featured talk? (true/false)
 featured: false

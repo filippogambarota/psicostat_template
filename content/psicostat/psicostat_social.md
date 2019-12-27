@@ -4,10 +4,10 @@
 widget = "blank"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
-weight = 1  # Order that this section will appear.
+weight = 2 # Order that this section will appear.
 
-title = "Psicostat"
-subtitle = "![](img/logo_unipd.svg)"
+title = "Social"
+subtitle = "A look into of our meetings"
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.
@@ -48,8 +48,12 @@ subtitle = "![](img/logo_unipd.svg)"
  css_class = ""
 +++
 
-## About
-
-We are an interdisciplinary research group interested in **Psychology** and **Statistics**, working in areas related to ***quantitative psychology***, ***psychometrics***, ***psychological testing*** and ***statistics***.
-
-Our goal is to promote the connection between the two fields in order ti benefit the progress of scientific research. We are located in the [Department of Developmental Psychology and Socialisation](https://www.dpss.unipd.it/en/) at [University of Padua](https://www.unipd.it/en/)
+<div style="float: left; width: 50%;">
+<ul>
+<a class="twitter-timeline"
+    href="https://twitter.com/psicostat?ref_src=twsrc%5Etfw"
+    data-width="400"
+    data-height="400">
+    Tweets by psicostat</a> 
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</ul>

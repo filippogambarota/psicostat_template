@@ -5,27 +5,27 @@
 
 [[main]]
   name = "Posts"
-  url = "#posts"
+  url = "post/"
   weight = 10
 
 [[main]]
   name = "Publications"
-  url = "#publications"
+  url = "publication/"
   weight = 20
 
 [[main]]
   name = "Posters"
-  url = "#posters"
+  url = "poster/"
   weight = 30
 
 [[main]]
   name = "Talks"
-  url = "#talks"
+  url = "talk/"
   weight = 40
 
 [[main]]
   name = "Teaching"
-  url = "#teaching"
+  url = "teaching/"
   weight = 50
 
 [[main]]

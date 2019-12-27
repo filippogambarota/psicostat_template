@@ -1,0 +1,44 @@
+// Override this file to add your own SCSS styling.
+
+/* reduce the padding in the home widgets */
+.home-section {
+  background-color: $sta-home-section-odd;
+  padding: 60px 0 60px 0;         /* changes here */
+  animation: intro 0.3s both;
+  animation-delay: 0.15s;
+}
+
+
+/* change color and bold of the widgets titles to the defult theme */
+.section-heading h1 {
+  margin: 0 0 10px 0;
+  color: $sta-menu-primary;     /* changes here */
+  font-weight: bold;
+}
+
+/* change bold of the title bio */
+.title-bio h1 {
+  font-weight: bold;
+}
+
+/* increase the size of the selected text in the navigation bar */
+.navbar-nav {
+    display: flex;
+
+    .nav-link {
+      color: rgba($sta-menu-text, .85);
+
+      &.active,
+      &:hover,
+      &:focus {
+        color: $sta-menu-text;
+      }
+
+      &.active {
+        font-size: large;              /* changes here */
+        font-weight: bold !important;
+        color: $sta-menu-text-active !important;
+      }
+    }
+  }
+

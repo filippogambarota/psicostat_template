@@ -7,7 +7,7 @@ active = true  # Activate this widget? true/false
 weight = 2 # Order that this section will appear.
 
 title = "Social"
-subtitle = "A look into of our meetings"
+subtitle = "A look into our meetings"
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.

@@ -5,13 +5,13 @@ name = "psicostat"
 light = true
 
 # Primary
-primary = "#C0392B" # questo è il colore delle icone, delle scritte principali
+primary = "#990000" # questo è il colore delle icone, delle scritte principali
 
 # Menu
-menu_primary = "#E1E1E1" # questo è lo sfondo della striscia dietro al logo
-menu_text = "#000000"
-menu_text_active = "#000000"
-menu_title = "#2b2b2b"
+menu_primary = "#990000" # questo è lo sfondo della striscia dietro al logo
+menu_text = "#FFFFFF"
+menu_text_active = "#FFFFFF"
+menu_title = "#FFFFFF"
 
 # Home sections
 home_section_odd = "rgb(255, 255, 255)"

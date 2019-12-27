@@ -48,11 +48,11 @@ subtitle = "A look into our meetings"
  css_class = ""
 +++
 
-<div style="float: left; width: 50%;">
+<div style="float: left; width: 100%;">
 <ul>
 <a class="twitter-timeline"
     href="https://twitter.com/psicostat?ref_src=twsrc%5Etfw"
-    data-width="400"
+    data-width="600"
     data-height="400">
     Tweets by psicostat</a> 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

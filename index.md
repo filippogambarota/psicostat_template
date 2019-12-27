@@ -1,89 +1,82 @@
 - [How to create the website?](#how-to-create-the-website)
   - [What do we need?](#what-do-we-need)
 - [Step by Step Guide](#step-by-step-guide)
-  - [1. One-click installer](#1-one-click-installer)
-  - [2. Forking and Cloning](#2-forking-and-cloning)
-    - [1. Forking the repository](#1-forking-the-repository)
-      - [Customize the repository](#customize-the-repository)
-    - [2. Cloning locally](#2-cloning-locally)
-    - [2. Deploying the website](#2-deploying-the-website)
+  - [One-click installer](#one-click-installer)
 - [How to manage the website?](#how-to-manage-the-website)
+  - [Cloning locally](#cloning-locally)
+  - [Manage the website](#manage-the-website)
   - [Website Structure](#website-structure)
+    - [Theme](#theme)
   - [First modifications](#first-modifications)
   - [Home](#home)
   - [New contents](#new-contents)
     - [How to create a new content?](#how-to-create-a-new-content)
+      - [Available templates](#available-templates)
       - [Link to other files](#link-to-other-files)
     - [Save and upload all modifications](#save-and-upload-all-modifications)
-      - [Commit](#commit)
+      - [Commit and Push](#commit-and-push)
+  - [Useful Links](#useful-links)
 
 # How to create the website?
 
 Nella mia [breve introduzione](https://github.com/filippogambarota/hugo_tutorial) ad Hugo avevo suggerito di utilizzare **blogdown** e quindi RStudio per creare da zero il sito. Tuttavia essendo che partiremo da un **template modificato** utilizzeremo un approccio leggermente diverso.
 Questo template è un semplice adattamento del tema **Academic** con alcune modifiche estetiche e di struttura:
 
-* Sezioni per post, talk, poster, progetti
-* Una sezione specifica per Psicostat con link al sito web, feed di Twitter aggiornato e non per ultimo il nostro motto :smile:.
-* Il logo nella schermata principale e anche le icone che compaiono nelle tabs del browser
+* Sezioni per post, talk, poster e insegnamenti
+* Una sezione specifica per Psicostat con link al sito web, feed di Twitter aggiornato e non per ultimo il nostro motto.
 
 Inoltre molte funzioni e link sono stati rimossi (o meglio semplicemente disattivati) per semplificare l'interfaccia ed il funzionamento. Tuttavia il bello di questo framework è la totale personalizzazione, pur partendo però da un template semplice.
 
 ## What do we need?
 
-* [GIT](https://git-scm.com/) and [Hugo](https://gohugo.io/) installed on the PC
-* A [Github](https://github.com/) account
-* A [Netlify](https://www.netlify.com/) account
-* RStudio con il pacchetto Blogdown oppure un'altra IDE ([VSCode](https://code.visualstudio.com/) super raccomandato). VSCode è veramente un super software con un sacco di plugin per HTML, Markdown e CSS (oltre anche ad R e Python). L'integrazione con GIT e Github è molto più rapida ed efficiente di RStudio. La modalità più efficiente di usare GIT e Github rimane l'utilizzo del terminale e questo ovviamente è possibile sia con RStudio che con VSCode.
+* [GIT](https://git-scm.com/) e [Hugo](https://gohugo.io/) installati sul PC
+* Un account [Github](https://github.com/).
+* Un account [Netlify](https://www.netlify.com/).
+* RStudio con il pacchetto Blogdown oppure un'altra IDE ([VSCode](https://code.visualstudio.com/) super raccomandato). 
+
+VSCode è veramente un super software con un sacco di plugin per HTML, Markdown e CSS (oltre anche ad R e Python). L'integrazione con GIT e Github è molto più rapida ed efficiente di RStudio. La modalità più efficiente di usare GIT e Github rimane l'utilizzo del terminale e questo ovviamente è possibile sia con RStudio che con VSCode.
 
 # Step by Step Guide
 
-Ci sono due modalità per creare il proprio sito partendo dal template creato:
+## One-click installer
 
-1. One-click installer (facile e automatica)
-2. Copiare la repository e connetterla con Netlify (qualche passaggio in più)
+Una volta creato l'account Github e Netlify, il modo più semplice e veloce per creare il sito e collegarlo direttamente a Netlify è andare su [questo link](https://app.netlify.com/start/deploy?repository=https://github.com/filippogambarota/psicostat_template. 
 
-## 1. One-click installer
+In questo modo si crea automaticamente una repository (copiando il template `filippogambarota/psicostat_template`) sul proprio account Github e si connette direttamente su Netlify. In fase di creazione si potrà rinominare la repository e successivamente anche il dominio del sito dal pannello di controllo di Netlify.
 
-Sostanzialmente cliccando su [questo link](https://app.netlify.com/start/deploy?repository=https://github.com/filippogambarota/psicostat_template) Netlify crea automaticamente un sito basato sulla repository `filippogambarota/psicostat_template`. Quindi è sufficiente avere un account Netlify fare il login e seguire gli step del link. A questo punto è sufficiente [clonare la repository localmente](#2-cloning-locally) e passare direttamente al paragrafo su come [gestire il sito](#how-to-manage-the-website).
+All'interno della repository c'è un file `netlify.toml` che contiene tutti i settaggi che Netlify userà per i deploying. Di conseguenza non dovrebbe essere necessario modificare nessuna impostazione. Nella `fig.1` è si vede il pannello di controllo con il sito creato (se il nome non è stato modificato il sito avrà un nome strano autogenerato). Cliccando sul sito si accede (fig.2) al pannello di controllo dove modificare le impostazioni (non consigliato) e il dominio (`domain settings`).
 
-## 2. Forking and Cloning
+<img src="img/netlify1.png" alt="fig.1" width="500" align="middle">
 
-### 1. Forking the repository
+<img src="img/netlify2.png" alt="fig.2" width="300" align="middle">
 
-La prima cosa da fare è copiare la repository sul proprio account Github. Quando sei loggato a Github vai su questa repository [psicostat_template](https://github.com/filippogambarota/psicostat_template) e premi il pulsante `fork` in alto a destra. In questo modo avrai una copia esatta del template sul tuo account personale.
+# How to manage the website?
 
-#### Customize the repository
+## Cloning locally
 
-E' possibile anche rinominare la tua repository in modo da avere `username/repository_name`. Un consiglio è anche quello di mettere la repository come **privata** perchè potrebbe essere che dovrai mettere alcuni dati sensibili online. Credo sia possibile gestire in modo avanzato quali file sincronizzare online e quali no ma potrebbe anche corrompere in qualche modo la struttura del sito.
+A questo punto sarebbe necessario modificare i file direttamente da Github per aggiornare il sito. Tuttavia è molto scomodo quindi come detto in precedenza possiamo modificare i file localmente e poi fare il `push` delle modifiche a Github.
 
-### 2. Cloning locally
-
-Ora dobbiamo fare una copia locale del sito che sara gestita tramite GIT e già collegata a Github così tutte le modifiche saranno automaticamente caricate su Github. Per clonare localmente la repository è sufficiente aprire il terminale (`cmd` o `powershell` su Windows), navigare sulla cartella in cui si vuole copiare il sito e digitare:
+Per avere la repository localmente è sufficiente aprire il terminale sul PC, posizionarsi nella cartella dove si vuole mantenere il sito e utilizzare il seguente comando (mettendo il proprio `#nomeutente` e `#nomerepository`):
 
 ```git
-git clone https://github.com/filippogambarota/psicostat_template.git
+git clone https://github.com/#nomeutente/#nomerepository.git
 ```
 
-Ora tutte le cartelle e i file saranno copiati sul PC e sarà possibile modificare e fare l'upload delle modifiche. Per verificare che il sito funzioni correttamente è sufficiente aprire nuovamente il terminale nella **root** del sito e digitare:
+## Manage the website
+
+
+La documentazione di Hugo e del tema Academic sono veramente ottime e complete tuttavia essendo personalmente ad un livello molto base le ho trovate leggermente complesse e dispersive.
+
+In questo caso quindi vorrei riportare quelle informazioni essenziali rispetto alla struttura, i comandi e le funzioni per gestire quotidinamente. Se queste informazioni non dovessero essere abbastanza comunque ci saranno dei link alla documentazione e anche una [sezione finale](#useful-links) con le principali risorse.
+
+Prima di cominciare a modificare il sito, ci sono due modi per capire se la procedura finora è andata a buon fine:
+* Se il sito è online all'indirizzo di Netlify
+* Dopo aver clonato la repository localmente posizionarsi nella `root` della cartella e utilizzare il seguente comando da terminale:
 
 ```
 hugo server
 ```
-
-Questo comando serve a costruire il sito e verificare che non ci siano errori o file corrotti. Se tutto va bene vi darà un messaggio di conferma assieme ad un'indirizzo locale da copiare e incollare nel browser per visualizzare una copia offline del sito. Questo comando sarà inoltre utile perchè si aggiorna in tempo reale a seconda delle modifiche al sito in modo da vedere subito il risultato.
-
-### 2. Deploying the website
-
-L'ultimo passo per avere il sito correttamente online è quello di connettere la nostra repository su Github al nostro account Netlify. Netlify è un servizio di hosting gratuito (fino ad un certo traffico e con funzioni base) perfettamente integrato con Hugo e il tema Academic. Per connettere la nostra repository semplicemente cliccare (in figura) `new site from Git`.
-
-![](img/netlify_1.png)
-
-E' necessario poi seguire tutti gli step e dare la conferma. Ci sono dei parametri da inserire ma nella cartella del nostro sito (e quindi nella repository di Github) è presente un file `netlify.toml` che contiene tutti i parametri che vengono automaticamente letti da Netlify. Se tutto funziona correttamente dovrebbe comparire un messaggio di conferma riguardo al sito e a questo punto è possibile cambiare il nome del dominio mantendento però `nomesito.netlify.com`. Entrando su `domain settings` è possibile cambiare diverse impostazioni del sito.
-
-# How to manage the website?
-
-La documentazione di Hugo e del tema Academic sono veramente ottime e complete tuttavia essendo personalmente ad un livello molto base le ho trovate leggermente complesse e dispersive. In questo caso quindi vorrei riportare quelle informazioni essenziali rispetto alla struttura, i comandi e le funzioni per gestire quotidinamente. Se queste informazioni non dovessero essere abbastanza è sufficiente consultare la documentazione ufficiale e anche la repository Github del tema Academic per aspetti più avanzati.
-Tuttavia un aspetto veramente fantastico del tema riguarda il fatto che tutte le pagine, i template e i file interni sono documentati in modo esaustivo all'interno del file stesso in modo da sapere sempre cosa modificare per avere un determinato risultato.
+Questo compila il sito e fornisce un indirizzo locale per vedere il funzionamento. Il fatto che si compili senza errori significa che non ci sono problemi nella struttura.
 
 ## Website Structure
 
@@ -96,9 +89,17 @@ La cartella principale del sito contiene:
 * La cartella `data` che ho creato per contenere i file `.toml` del tema modificato. In pratica modificando i parametri dentro questa cartella il tema (colori, fonts) verra cambiato all'intero sito.
 * La cartella `config` che contiene altri file di configurazione di base (simili a `config.toml`) del sito come la **lingua**, tutte le **informazioni di contatto**, le eventuali **mappe** da visualizzare, i **link ai social network** e sopratutto la **struttura del menu home**.
 
+### Theme
+
+La cartella `theme` non andrebbe modificata se non per cambiare gli [archetypes](https://gohugo.io/content-management/archetypes/). Questi non sono altro che i template che verranno utilizzati quando si useranno i [comandi](#how-to-create-a-new-content) di `hugo` per la creazione di contenuti.
+
+All'interno della cartella `theme/layouts` ci sono invece le tipologie di contenuti che possiamo creare (anche qui personalizzabili) come le pubblicazioni, i talk e cosi via.
+
 ## First modifications
 
-Prima di illustrare come gestire nuovi contenuti bisogna modificare le impostazioni di base del sito in modo da renderlo subito personalizzato. Come detto in precedenza, prima di fare queste modifiche lanciare il comando `hugo server` in modo da vedere tutte le modifiche in tempo reale. I primi step da fare sono quindi:
+Un buon modo di modificare il sito web è quello di lanciare subito il comando `hugo server`. Questo oltre a controllare la struttura permette di avere un indirizzo locale dove tutte le modifiche vengono visualizzate in tempo reale. Cosi una volta soddisfatti possiamo effettuare il **commit** ed il **push**.
+
+Le prime cose che consiglio di fare sono:
 
 1. Aprire i vari file di configurazione `.toml` e cambiare le impostazioni desiderate come contatti, link e nome del sito. Il logo e in generale tutte le immagini sono contenute nella cartella `static/img` quindi è sufficiente cambiare l'immagine e inserire il nome nei file di configurazione per cambiare anche il logo. Se non è necessario per il momento non cambiare la struttura della home nel file `menus.toml`.
 2. Prima dei contenuti veri e propri è utile aggiornare il proprio profilo come autore. Essendo che il sito supporta diversi autori con diversi profili se si modifica l'autore principale (`admin`) ogni volta che in un post o pubblicazione inseriamo `admin` come autore automaticamente si farà riferimento a quel profilo con le informazioni associate. Per modificare il profilo autore andare su `content/authors/admin/_index.md`. Ci sono varie informazioni da inserire come i link social con le icone.
@@ -106,10 +107,16 @@ Prima di illustrare come gestire nuovi contenuti bisogna modificare le impostazi
 
 ## Home
 
-A questo punto le informazioni di base nostre e del sito sono inserite. Il prossimo passo è capire il funzionamento della schermata home. Nella cartella `content/home` sono contenute le varie pagine `.md` con le informazioni che appaiono nella schermata home. Le varie pagine sono create su dei `widget` base che fanno parte del tema e che sono il punto di partenza per creare delle sezioni personalizzate. Ad esempio la sezione **Psicostat** non è altro che un `widget blank` ([link alla documentazione per informazioni sui widget](https://sourcethemes.com/academic/docs/page-builder/)) dove sono stati inseriti il feed di twitter, un'immagine e un titolo. I vari widget hanno delle caratteristiche di struttura, aspetto e funzionalità. Ad esempio la pagina `Skill` è basata sul widget `featurette` che permette di creare quelle icone a blocchi che indicano le nostre skills in modo grafico. All'interno delle pagine nella cartella home ci sono dei comandi di configurazione racchiusi tra `+++` (concettualmente è identico al codice YALM racchiuso tra `---`prima di un documento in KNITR) e il testo che viene scritto direttamente in Markdown ma anche in HTML (per alcune feature avanzate). Ogni funzione di configurazione è documentata con dei commenti dell'autore.
+A questo punto le informazioni di base nostre e del sito sono inserite. Il prossimo passo è capire il funzionamento della schermata home. Nella cartella `content/home` sono contenute le varie pagine `.md` con le informazioni che appaiono nella schermata home.
 
-Un'aspetto importante è il parametro `weight =` che indica l'ordine di visualizzazione nella pagina. Diverse invece sono le sezioni in alto nella home. Sostanzialmente possiamo creare una nuova sezione della home, come **Psicostat** e collegarla ad un widget nella pagina principale. Nel file `config/_default/menus.toml` abbiamo le sezioni che vengono visualizzate in alto dove `name` indica il nome da visualizzare e `#nome` indica il nome del file `.md` all'interno della cartella `content/home`. In questo modo quando viene premuto il collegamento in alto, il sito indirizza alla sezione corrispondente.
-Ovviamente è possibile creare una sezione con un link esterno (un sito web) oppure, come indicato in fondo al file `menus.toml` ad un CV in formato pdf.
+Le varie pagine sono create su dei `widget` base che fanno parte del tema e che sono il punto di partenza per creare delle sezioni personalizzate. Ad esempio la sezione **Psicostat** non è altro che un `widget blank` ([link alla documentazione per informazioni sui widget](https://sourcethemes.com/academic/docs/page-builder/)) dove sono stati inseriti il feed di twitter, un'immagine e un titolo.
+
+I vari widget hanno delle caratteristiche di struttura, aspetto e funzionalità. Ad esempio la pagina `Skill` è basata sul widget `featurette` che permette di creare quelle icone a blocchi che indicano le nostre skills in modo grafico. All'interno delle pagine nella cartella home ci sono dei comandi di configurazione racchiusi tra `+++` (concettualmente è identico al codice YALM racchiuso tra `---`prima di un documento in KNITR) e il testo che viene scritto direttamente in Markdown ma anche in HTML (per alcune feature avanzate). Ogni funzione di configurazione è documentata con dei commenti dell'autore.
+
+Un'aspetto importante è il parametro `weight =` che indica l'ordine di visualizzazione nella pagina. Diverse invece sono le sezioni in alto nella home. Sostanzialmente possiamo creare una nuova sezione della home, come **Psicostat** e collegarla ad un widget nella pagina principale.
+
+Nel file `config/_default/menus.toml` abbiamo le sezioni che vengono visualizzate in alto dove `name` indica il nome da visualizzare e `#nome` indica il nome del file `.md` all'interno della cartella `content/home`. In questo modo quando viene premuto il collegamento in alto, il sito indirizza alla sezione corrispondente.
+Ovviamente è possibile creare una sezione con un link esterno (un sito web) oppure,come indicato in fondo al file `menus.toml` ad un CV in formato pdf.
 
 ## New contents
 
@@ -118,6 +125,7 @@ Ora il sito è strutturato e organizzato. Per creare nuovi contenuti ci sono var
 ### How to create a new content?
 
 Per creare un nuovo contenuto sarebbe semplicemente necessario creare un nuovo file Markdown con l'intestazione uguale a quella di un articolo già presente e poi inserire le informazioni. Un modo più semplice però consiste nell'utilizzare le funzioni di Hugo per creare dei contenuti.
+
 Se apriamo il terminale nella root del nostro sito e digitiamo:
 
 ```
@@ -126,30 +134,58 @@ hugo new --kind #tipo_template cartella/nome_file
 
 Automaticamente si crea una cartella nel percorso selezionato con un file Markdown strutturato secondo il template indicato. Se vogliamo ad esempio creare una nuova pubblicazione possiamo digitare:
 
-```
-hugo new --kind publication publication/nome_pubblicazione
-```
-Questo vale per tutte le tipologie di contenuti come talk, projects e post. In questo modo sarà necessario semplicemente aprire il file creato e modificare senza preoccuparsi della struttura o di informazioni mancanti.
+#### Available templates
+
+Le tipologie di template disponibili (argomento #tipo_template) in questo adattamento del tema sono:
+* publication
+* talk
+* poster (nuovo rispetto al tema standard)
+* teaching (nuovo rispetto al tema standard)
+* post
+
+Sono disponibili anche altri contenuti come i projects ma per il momento sono stati disattivati.
 
 #### Link to other files
 
-Nei vari contenuti che scriviamo o a cui vogliamo collegarci con un link c'è la possibilità di inserire dei file che risiedono effettivamente nel sito come immagini, i full-text degli articoli o altro materiale. Ad esempio se nell'articolo vogliamo inserire un link al pdf (`url_pdf =`)possiamo mettere un link web per esempio al full-text della rivista o al sito stesso del database oppure creare un link ad un file che effettivamente è memorizzato nel sito. Tutti i file sono contenuti nella cartella `static` e possono essere organizzati in qualunque modo. L'importante è **inserire la path al file senza la cartella static** e quindi per esempio se abbiamo un pdf nella cartella static semplicemente inserire il link come `nome.pdf`. Nel caso fosse in sottocartelle inserire `folder/nome.pdf`. lo stesso funziona per inserire delle immagini in un post o in qualunque altra parte del sito.
+Nei vari contenuti che scriviamo o a cui vogliamo collegarci con un link c'è la possibilità di inserire dei file che risiedono effettivamente nel sito come immagini, i full-text degli articoli o altro materiale.
+
+Ad esempio se nell'articolo vogliamo inserire un link al pdf (`url_pdf =`)possiamo mettere un link web per esempio al full-text della rivista o al sito stesso del database oppure creare un link ad un file che effettivamente è memorizzato nel sito. 
+
+Tutti i file sono contenuti nella cartella `static` oppure nella cartella specifica del contenuto.
+* Se il file/immagine è contenuto nell cartella static: **inserire la path al file senza la cartella static** e quindi per esempio se abbiamo un pdf nella cartella static semplicemente inserire il link come `nome.pdf`. Nel caso fosse in sottocartelle inserire `folder/nome.pdf`.
+* Se il file/immagine è all'interno nella cartella del contenuto specifico tipo: `post/il_mio_post` come nel caso precedente inserire direttamente `file.estensione` oppure `cartella/file.estensione` nel caso sia in una sottocartella.
 
 ### Save and upload all modifications
 
-Questo è sicuramente lo step più importante. Tutte le modifiche che sono state fatte fino ad ora saranno state sicuramente visualizzate nella version locale del sito (con il comando `hugo server`). Per salvare una modifica è sufficiente semplicemente salvare il file dove questa è stata fatta. Se il sito viene compilato senza errori significa che anche la versione online non avrà problemi.
+Questo è sicuramente lo step più importante. Tutte le modifiche che sono state fatte fino ad ora saranno state sicuramente visualizzate nella **versione locale** del sito (con il comando `hugo server`). Per salvare una modifica è sufficiente semplicemente salvare il file dove questa è stata fatta. **Se il sito viene compilato senza errori significa che anche la versione online non avrà problemi.**
 
 Tutte le modifiche locali però devono passare per altri 2 importanti step per essere effettivamente online:
 
 1. Deve essere effettuato un `commit` tramite GIT (quindi in locale) con un messaggio di commit sensato in modo da rendere più facile tornare indietro per eventuali errori.
 2. Effettuare il `push` delle modifiche alla repository Github (quindi online). A questo punto Netlify rileverà le modifiche e il sito sarà aggiornato in qualche minuto.
 
-#### Commit
+#### Commit and Push
 
-Per effettuare il commit si possono utilizzare i tool del software che utilizziamo oppure direttamente da terminale. I comandi principali sono:
+Per effettuare il commit e il push si possono utilizzare i comandi GUI del programma che usiamo oppure scrivere da terminale:
 
 ```git
-git add . #per aggiungere tutte le modifiche al commit
+git add -A #per aggiungere tutte le modifiche al commit
 git commit -m "Message" #commit con messaggio
 git push #mandare tutte le modifiche a Github
 ```
+## Useful Links
+
+Ci sono due fonti principali per approfondire la documentazione:
+
+* [Documentazione Hugo](https://gohugo.io/documentation/)
+* [Documentazione Academic Theme](https://sourcethemes.com/academic/docs/)
+
+La documentazione di Hugo è molto approfondita (e anche complessa). Per gestire e modificare questo template ho trovato sufficiente quella del tema Academic e queste pagine della documentazione di Hugo:
+* https://gohugo.io/content-management/archetypes/ (Archetipi)
+* https://gohugo.io/content-management/types/ (Modificare e aggiungere tipologie di contenuti collegati agli archetipi)
+* https://gohugo.io/commands/hugo/ (i comandi di hugo in particolare `hugo server` e le varie tipologie di `hugo new`)
+
+Altre risorse utili sono:
+* La [repository Github](https://github.com/gcushen/hugo-academic) di Academic in particolare la sezione [issues](https://github.com/gcushen/hugo-academic/issues) perchè ci sono molti problemi comuni.
+* La [chat/forum](https://spectrum.chat/academic?tab=posts) degli utenti del tema.
+* La documentazione del pacchetto [Blogdown](https://bookdown.org/yihui/blogdown/) sia per utilizzare il pacchetto ovviamente ma anche per capire la struttura di Hugo.

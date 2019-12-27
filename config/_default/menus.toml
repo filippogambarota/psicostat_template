@@ -35,7 +35,7 @@
 
 [[main]]
   name = "Psicostat"
-  url = "psicostat"
+  url = "psicostat/"
   weight = 80
 
 # Link to a PDF of your resume/CV from the menu.

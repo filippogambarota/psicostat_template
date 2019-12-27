@@ -1,5 +1,15 @@
+# R auxiliary files
 .Rproj.user
 .Rhistory
 .RData
 .Ruserdata
 Psicostat_Website.code-workspace
+
+# Hugo auxiliary folders
+/public
+/node_modules
+/resources
+
+# mac auxiliary files
+*.DS_store
+

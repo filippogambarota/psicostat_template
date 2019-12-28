@@ -7,7 +7,7 @@ active = true  # Activate this widget? true/false
 weight = 120  # Order that this section will appear.
 
 title = "[Psicostat](http://ip146179.psy.unipd.it/psicostat/web/index.html?fbclid=IwAR1F8-gDhqlNPFTFJZLgSeMwSQoQRzEwijU5mAPdSGjEH-bNvFjgv6O82Rg)"
-subtitle = "logo"
+subtitle = "![logo psicostat](img/Psicostat_hexagon.svg)"
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.

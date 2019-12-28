@@ -9029,3 +9029,7 @@ div.mermaid {
       /* changes here */
       font-weight: bold !important;
       color: #FFFFFF !important; }
+
+/* border of twitter box */
+.twitter-timeline {
+  box-shadow: 6px 6px 13px -8px #4a4a4a; }

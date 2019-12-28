@@ -56,7 +56,7 @@ subtitle = ""
     Our goal is to promote the connection between the two fields in order to benefit the progress of scientific research. We are located in the <a href="https://www.dpss.unipd.it/en/">Department of Developmental Psychology and Socialisation</a> at <a href="https://www.unipd.it/en/">University of Padua</a>.
 </div>
 
-<div style="float: right; width: 35%; box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.19); padding-right:30px; padding-top:20px">
+<div style="float: right; width: 35%">
 <ul>
 <a class="twitter-timeline"
     href="https://twitter.com/psicostat?ref_src=twsrc%5Etfw"

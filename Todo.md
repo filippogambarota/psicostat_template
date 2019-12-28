@@ -9,7 +9,8 @@
     - [x] Rivedere layout social e motto/descrizione
     - [x] Ombra attorno elementi
 - [x] Mettere Twitter personale a fianco di contact
-- [ ] Pubblicazioni Python
+- [x] Pubblicazioni Python
+    - Lo script sembra funzionare benone ma l'ho provato in una branch locale per sicurezza
 
 ## Claudio
 

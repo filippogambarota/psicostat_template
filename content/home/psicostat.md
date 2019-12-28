@@ -7,7 +7,7 @@ active = true  # Activate this widget? true/false
 weight = 120  # Order that this section will appear.
 
 title = "[Psicostat](http://ip146179.psy.unipd.it/psicostat/web/index.html?fbclid=IwAR1F8-gDhqlNPFTFJZLgSeMwSQoQRzEwijU5mAPdSGjEH-bNvFjgv6O82Rg)"
-subtitle = "![logo psicostat](img/Psicostat_hexagon.svg)"
+subtitle = ""
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.
@@ -47,6 +47,10 @@ subtitle = "![logo psicostat](img/Psicostat_hexagon.svg)"
  # CSS class.
  css_class = ""
 +++
+
+<div style="float: left; width: 30%;">
+  <img class= logo src="img/Psicostat_hexagon.svg" width="200" align="middle">
+</div>
 
 I'm part of <font color="#990000"> <b> Psicostat </b> </font>. We are an interdisciplinary research group interested in **Psychology** and **Statistics** working at the University of Padua.
 

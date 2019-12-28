@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="50mm"
-   height="50mm"
-   viewBox="0 0 50 50"
+   width="50.123806mm"
+   height="50.123806mm"
+   viewBox="0 0 50.123806 50.123806"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
@@ -78,6 +78,26 @@
        apply_no_weight="true"
        apply_with_weight="true"
        only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect864-8"
+       is_visible="true"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect864-9-4"
+       is_visible="true"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -86,9 +106,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.1439728"
-     inkscape:cx="2783.4601"
-     inkscape:cy="72.882964"
+     inkscape:zoom="1.4064477"
+     inkscape:cx="-126.75691"
+     inkscape:cy="21.356586"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -111,10 +131,15 @@
     </rdf:RDF>
   </metadata>
   <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="background"
+     transform="translate(-135.49346,-10.595074)" />
+  <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(691.14624,-482.96412)">
+     transform="translate(555.65278,-493.55919)">
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:42.33333206px;line-height:1.25;font-family:Constantia;-inkscape-font-specification:'Constantia, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:1;fill:#c85d63;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
@@ -127,17 +152,16 @@
          y="192.3575"
          style="stroke-width:1" /></text>
     <g
-       id="g852"
-       transform="matrix(0.12380676,0,0,0.12380676,-605.57766,466.97956)">
+       id="g971">
       <rect
-         y="129.10896"
-         x="-691.14624"
-         height="403.85516"
-         width="403.85516"
+         y="493.62109"
+         x="-555.59088"
+         height="50"
+         width="50"
          id="rect828"
-         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke" />
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.12380676;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;paint-order:markers fill stroke" />
       <g
-         transform="translate(-674.43814,93.028415)"
+         transform="matrix(0.12380676,0,0,0.12380676,-553.5223,489.15408)"
          id="g849">
         <text
            xml:space="preserve"
@@ -207,7 +231,7 @@
            inkscape:connector-curvature="0"
            inkscape:original-d="m -725.82952,-25.050361 c 2.7e-4,-4.677508 2.7e-4,-9.354751 0,-14.031727 4.13865,-2.65e-4 8.2775,-2.65e-4 12.41587,0"
            transform="matrix(1.0324085,0,0,0.78354891,920.10556,102.79861)"
-           inkscape:path-effect="#path-effect864" />
+           inkscape:path-effect="#path-effect864-8" />
         <rect
            style="opacity:1;fill:#b51f26;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
            id="rect845-4"
@@ -223,7 +247,7 @@
            inkscape:connector-curvature="0"
            inkscape:original-d="m -725.82952,-25.050361 c 2.7e-4,-4.677508 2.7e-4,-9.354751 0,-14.031727 4.13865,-2.65e-4 8.2775,-2.65e-4 12.41587,0"
            transform="matrix(1.0324085,0,0,0.78354891,941.9376,102.79861)"
-           inkscape:path-effect="#path-effect864-9" />
+           inkscape:path-effect="#path-effect864-9-4" />
       </g>
     </g>
   </g>

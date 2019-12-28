@@ -1,12 +1,17 @@
 # Questo è il file con le cose da fare
 
-- [x] Togliere sezione skills
-- [ ] Pagina psicostat a parte con spiegazione e link al sito
-    - ~~Ho alcuni problemi perchè non riesco a linkare più le immagini dopo aver creato la pagina nuova. Provo a risolvere questo e magari tu poi metti i contenuti che preferisci su come presentare Psicostat~~
-    - Ho risolto il link alle immagini, bisogna inserire l'immagine nella cartella della pagina nuova e linkare a quella. Resta comunque da arricchire la pagina Psicostat
-- [x] Sezione teaching per i prof
-    - Ho aggiunto la sezione basata su il template dei projects perchè hanno molti link che si possono aggiungere e i tag per filtrare dove ho messo il filtro per anno di corso
-- [x] sezioni post, publication e poster come su [https://www.jepusto.com](https://www.jepusto.com)
-- [x] Rivedere sezioni Accomplish­ments, Experience e Projects
-      - Qui ho tolto Accompl. e Projects
-- [x] Togliere logo psicostat
+## Filippo
+
+- [ ] Rivedere sezione Psicostat
+    - [ ] Home page solo con logo e descrizione
+    - [ ] Togliere sezione social e unire a quella principale
+    - [ ] Rivedere layout social e motto/descrizione
+    - [ ] Ombra attorno elementi
+- [ ] Mettere Twitter personale a fianco di contact
+- [ ] Pubblicazioni Python
+
+## Claudio
+
+- [ ] Sezione Porjects al posto di Experience
+- [ ] Filtrare pubblicazioni nella home come `relevant publications`
+- [ ] Unire talk e poster e dividerli come i projects (tag)

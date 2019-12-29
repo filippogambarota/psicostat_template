@@ -69,3 +69,11 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
   category = "categories"
   publication_type = "publication_types"
   author = "authors"
+  
+  
+# Permalinks according to the kind of content
+[permalinks]
+  post = "/:year/:month/:day/:slug/"
+  project = "/:slug/"
+  
+  

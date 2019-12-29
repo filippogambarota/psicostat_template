@@ -30,6 +30,7 @@ summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere t
   ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
 tags:
 - Source Themes
+- Preferred
 title: An example preprint / working paper
 url_code: '#'
 url_dataset: '#'

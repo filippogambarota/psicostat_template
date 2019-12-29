@@ -15,6 +15,7 @@
 
 {{/* Query */}}
 {{ $query := where site.RegularPages "Type" $items_type }}
+{{ $see_all_page := site.GetPage "Section" $items_type }}    {{/* Chenges here */}}
 {{ $archive_page := site.GetPage "Section" $items_type }}
 
 {{/* Filters */}}
@@ -72,7 +73,7 @@
     
     {{ if gt $count $items_count }}
     <div class="see-all">
-      <a href="{{ $archive_page.RelPermalink }}">
+      <a href="{{ $see_all_page.RelPermalink }}">    {{/* Chenges here*/}}
         {{ i18n $i18n | default "See all" }}
         <i class="fas fa-angle-right"></i>
       </a>

@@ -2,6 +2,7 @@
 header:
   caption: ""
   image: ""
-title: Talks & Posters
+title: Teaching
 view: 2
 ---
+    

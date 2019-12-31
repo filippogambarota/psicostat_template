@@ -20,7 +20,7 @@
 
 [[main]]
   name = "Talks & Posters"
-  url = "talk/"
+  url = "talk_poster/"
   weight = 40
 
 [[main]]

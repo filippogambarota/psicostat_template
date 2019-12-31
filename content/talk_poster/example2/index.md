@@ -26,6 +26,9 @@ all_day: false
 # Schedule page publish date (NOT talk date).
 publishDate: 2019-12-29T16:25:09+01:00
 
+talk_poster:
+- "2"
+
 authors: []
 tags: [Poster]
 

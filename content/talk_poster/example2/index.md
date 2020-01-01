@@ -26,8 +26,6 @@ all_day: false
 # Schedule page publish date (NOT talk date).
 publishDate: 2019-12-29T16:25:09+01:00
 
-talk_poster:
-- "2"
 
 authors: []
 tags: [Poster]
@@ -53,7 +51,7 @@ image:
 
 # Optional filename of your slides within your talk's folder or a URL.
 url_slides:
-url_poster: "/talk/example2/poster_example.pdf"
+url_poster: ""
 url_code:
 url_pdf: 
 url_video:

@@ -1,0 +1,6 @@
+{{/* Get Talk Poster Types */}}
+{{ $talk_poster := slice }}
+{{ range site.Data.talk_poster_types.types }}
+  {{ $talk_poster = $talk_poster | append (i18n . | default "Uncategorized") }}
+{{ end }}
+{{ return $talk_poster }}

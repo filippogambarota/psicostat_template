@@ -28,6 +28,11 @@ authors: []
 # Select one tag between Talk and Poster
 tags: []
 
+# Talk or Poster type.
+# Legend: 0 = Uncategorized; 1 = Talk; 2 = Poster
+talk_poster_types:
+- ""
+
 # Is this a featured talk? (true/false)
 featured: false
 

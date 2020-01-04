@@ -1,12 +1,23 @@
 # Questo è il file con le cose da fare
 
-- [x] Togliere sezione skills
-- [ ] Pagina psicostat a parte con spiegazione e link al sito
-    - ~~Ho alcuni problemi perchè non riesco a linkare più le immagini dopo aver creato la pagina nuova. Provo a risolvere questo e magari tu poi metti i contenuti che preferisci su come presentare Psicostat~~
-    - Ho risolto il link alle immagini, bisogna inserire l'immagine nella cartella della pagina nuova e linkare a quella. Resta comunque da arricchire la pagina Psicostat
-- [x] Sezione teaching per i prof
-    - Ho aggiunto la sezione basata su il template dei projects perchè hanno molti link che si possono aggiungere e i tag per filtrare dove ho messo il filtro per anno di corso
-- [x] sezioni post, publication e poster come su [https://www.jepusto.com](https://www.jepusto.com)
-- [x] Rivedere sezioni Accomplish­ments, Experience e Projects
-      - Qui ho tolto Accompl. e Projects
-- [x] Togliere logo psicostat
+## Filippo
+
+- [x] Rivedere sezione Psicostat
+    - [x] Home page solo con logo e descrizione
+      - [ ] aggiungere logo in vettoriale
+    - [x] Togliere sezione social e unire a quella principale
+    - [x] Rivedere layout social e motto/descrizione
+    - [x] Ombra attorno elementi
+- [x] Mettere Twitter personale a fianco di contact
+- [x] Pubblicazioni Python
+    - Lo script sembra funzionare benone ma l'ho provato in una branch locale per sicurezza
+
+## Claudio
+
+- [x] Sezione Porjects al posto di Experience
+- [x] Filtrare pubblicazioni nella home come `relevant publications`
+- [x] Unire talk e poster e dividerli come i projects (tag)
+    -[x] Metter il filtro anche nella pagina in cui sono elencati tutti i talks and posters.
+
+- [ ] ragruppare publication e talks & poster a seconda dell'anno
+    

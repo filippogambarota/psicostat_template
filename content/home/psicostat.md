@@ -7,7 +7,7 @@ active = true  # Activate this widget? true/false
 weight = 120  # Order that this section will appear.
 
 title = "[Psicostat](http://ip146179.psy.unipd.it/psicostat/web/index.html?fbclid=IwAR1F8-gDhqlNPFTFJZLgSeMwSQoQRzEwijU5mAPdSGjEH-bNvFjgv6O82Rg)"
-subtitle = "We are an interdisciplinary research group interested in **Psychology** and **Statistics** working at the University of Padua."
+subtitle = ""
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.
@@ -48,19 +48,10 @@ subtitle = "We are an interdisciplinary research group interested in **Psycholog
  css_class = ""
 +++
 
-<div style="float: left; width: 50%;">
-<ul>
-<a class="twitter-timeline"
-    href="https://twitter.com/psicostat?ref_src=twsrc%5Etfw"
-    data-width="400"
-    data-height="400">
-    Tweets by psicostat</a> 
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</ul>
+<div style="float: left; width: 30%;">
+  <img class= logo src="img/Psicostat_hexagon.svg" width="200" align="middle">
+</div>
 
-</div>
-<div style="float: right; width: 40%;">
-    <br>
-    <br>
-    <img src="img/atom.svg" width="250" align="middle">
-</div>
+I'm part of <font color="#990000"> <b> Psicostat </b> </font>. We are an interdisciplinary research group interested in **Psychology** and **Statistics** working at the University of Padua.
+
+For more information this is our <font color="#990000"> <b> [page](/psicostat) </b> </font>

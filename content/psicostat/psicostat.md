@@ -6,12 +6,12 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 1  # Order that this section will appear.
 
-title = "Psicostat"
-subtitle = "![](img/logo_unipd.svg)"
+title = "About us"
+subtitle = ""
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.
-  columns = "2"
+  columns = "1"
 
 [design.background]
   # Apply a background color, gradient, or image.
@@ -20,7 +20,7 @@ subtitle = "![](img/logo_unipd.svg)"
   #   Any HTML color name or Hex value is valid.
 
   # Background color.
-  # color = "navy"
+  #color = "#F7F7F7"
   
   # Background gradient.
   # gradient_start = "DeepSkyBlue"
@@ -47,9 +47,21 @@ subtitle = "![](img/logo_unipd.svg)"
  # CSS class.
  css_class = ""
 +++
+<a href="https://www.tandfonline.com/doi/full/10.1080/00031305.2019.1583913">
+<img src="img/atom.svg" width="250" align="left">
+</a>
 
-## About
+<div style="float: left; width: 40%; font-size:95%; padding-left:20px" align="justify">
+    We are an interdisciplinary research group interested in <b>Psychology</b> and <b>Statistics</b>, working in areas related to <b>quantitative psychology</b>, <b>psychometrics</b>, <b>psychological testing</b> and <b>statistics</b>.
+    Our goal is to promote the connection between the two fields in order to benefit the progress of scientific research. We are located in the <a href="https://www.dpss.unipd.it/en/">Department of Developmental Psychology and Socialisation</a> at <a href="https://www.unipd.it/en/">University of Padua</a>.
+</div>
 
-We are an interdisciplinary research group interested in **Psychology** and **Statistics**, working in areas related to ***quantitative psychology***, ***psychometrics***, ***psychological testing*** and ***statistics***.
-
-Our goal is to promote the connection between the two fields in order ti benefit the progress of scientific research. We are located in the [Department of Developmental Psychology and Socialisation](https://www.dpss.unipd.it/en/) at [University of Padua](https://www.unipd.it/en/)
+<div style="float: right; width: 35%">
+<ul>
+<a class="twitter-timeline"
+    href="https://twitter.com/psicostat?ref_src=twsrc%5Etfw"
+    data-width="500"
+    data-height="250">
+    Tweets by psicostat</a>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</ul>

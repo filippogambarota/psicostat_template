@@ -2,6 +2,6 @@
 header:
   caption: ""
   image: ""
-title: Publications
-view: 4
+title: Talks & Posters
+view: 2
 ---

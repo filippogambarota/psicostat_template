@@ -20,8 +20,9 @@
 {{ $archive_page := site.GetPage "Section" $items_type }}
 
 {{/* Select only wanted items */}}
-{{ $query = where $query "Params.show_homepage" "==" true }}
-     
+{{ if $st.Params.content.filters.only_show_homepage }}
+  {{ $query = where $query "Params.show_homepage" "==" true }}
+{{ end }}    
       
 {{ $count := len $query }}
 {{/* Offset and Limit */}}

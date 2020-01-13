@@ -20,7 +20,7 @@ subtitle = ""
   
   # Filter posts by a taxonomy term.
   [content.filters]
-    tag = ""
+    only_show_homepage = true
   
   # Filter toolbar (optional).
   # Add or remove as many filters (`[[content.filter_button]]` instances) as you like.

@@ -34,6 +34,9 @@
 {{ if $st.Params.content.filters.exclude_featured }}
   {{ $query = where $query "Params.featured" "!=" true }}
 {{ end }}
+{{ if $st.Params.content.filters.only_show_homepage }}
+  {{ $query = where $query "Params.show_homepage" "==" true }}
+{{ end }}
 {{ if $st.Params.content.filters.exclude_past }}
   {{ $query = where $query "Date" ">=" now }}
 {{ end }}

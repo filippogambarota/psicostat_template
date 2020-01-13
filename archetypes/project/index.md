@@ -8,7 +8,7 @@ tags: []
 categories: []
 date: {{ .Date }}
 
-# Option to display content in the homepage
+# Option to display content in the homepage (true/false)
 show_homepage: true
 
 # Optional external URL for project (replaces project detail page).

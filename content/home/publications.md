@@ -19,16 +19,17 @@ subtitle = ""
   
   # Choose how many pages you would like to offset by
   offset = 0
-
+  
   # Page order. Descending (desc) or ascending (asc) date.
   order = "desc"
 
   # Filter posts by a taxonomy term.
   [content.filters]
-    tag = "Preferred"
+    tag = ""
     category = ""
     publication_type = ""
     exclude_featured = false
+    only_show_homepage = true
   
 [design]
   # Toggle between the various page layout types.

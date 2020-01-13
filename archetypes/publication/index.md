@@ -1,34 +1,36 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "Paper I am not proud of"
-authors: ["admin"]
-date: 2019-12-29T11:58:15+01:00
+title: "{{ replace .Name "-" " " | title }}"
+authors: []
+date: {{ .Date }}
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2019-12-29T11:58:15+01:00
+publishDate: {{ .Date }}
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["2"]
+publication_types: ["0"]
 
 # Publication name and optional abbreviated publication name.
-publication: "Orrible journal"
+publication: ""
 publication_short: ""
 
-abstract: "Very boring staff"
+abstract: ""
 
 # Summary. An optional shortened abstract.
 summary: ""
 
 
+
 tags: []
 categories: []
 featured: false
-show_homepage: true
+# Option to display content in the homepage (true/false)
+show_homepage: false
 
 # Custom links (optional).
 #   Uncomment and edit lines below to show custom links.

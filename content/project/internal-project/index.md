@@ -14,6 +14,7 @@ summary: An example of using the in-built project page.
 tags:
 - Deep Learning
 title: Internal Project
+show_homepage: true
 url_code: ""
 url_pdf: ""
 url_slides: ""

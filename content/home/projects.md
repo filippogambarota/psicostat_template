@@ -1,16 +1,26 @@
 +++
 # A Projects section created with the Portfolio widget.
-widget = "portfolio"  # See https://sourcethemes.com/academic/docs/page-builder/
+widget = "project_interests"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = false  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 20  # Order that this section will appear.
 
-title = "Current<br> Projects"
+title = "Projects & <br> interests"
 subtitle = ""
 
 [content]
   # Page type to display. E.g. project.
   page_type = "project"
+  
+  # Choose how many projects you would like to display (0 = all projects)
+  count = 3
+  
+  # Choose how many projects you would like to offset by
+  offset = 0
+  
+  # Filter posts by a taxonomy term.
+  [content.filters]
+    tag = ""
   
   # Filter toolbar (optional).
   # Add or remove as many filters (`[[content.filter_button]]` instances) as you like.

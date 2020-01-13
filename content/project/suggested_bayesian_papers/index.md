@@ -1,16 +1,18 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "Psicostat Template"
-summary: "Personal website."
+title: "Suggested Bayesian Papers"
+summary: "My favourite Bayesian papers"
 authors: []
 tags: []
 categories: []
-date: 2019-12-29T10:12:08+01:00
+date: 2020-01-13T17:47:35+01:00
+
+# Option to display content in the homepage
 show_homepage: true
 
 # Optional external URL for project (replaces project detail page).
-external_link: "https://github.com/filippogambarota/psicostat_template"
+external_link: ""
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
@@ -40,3 +42,11 @@ url_video: ""
 #   Otherwise, set `slides = ""`.
 slides: ""
 ---
+
+In this tread I list my favourite Bayesian paper that explain....
+
+
+# Introuction to Bayesian Analysis
+
+- [A gentle introduction to bayesian analysis: applications to developmental research.](https://doi.org/10.1111/cdev.12169) Rens van de Schoot et al. (2013)
+- other..

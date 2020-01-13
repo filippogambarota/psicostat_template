@@ -9,9 +9,11 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+
    width="60.771214mm"
    height="56.032307mm"
    viewBox="0 0 60.771213 56.032307"
+
    version="1.1"
    id="svg8"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
@@ -78,6 +80,26 @@
        apply_no_weight="true"
        apply_with_weight="true"
        only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect864-8"
+       is_visible="true"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect864-9-4"
+       is_visible="true"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -86,9 +108,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
+
      inkscape:zoom="1.6288663"
      inkscape:cx="9.1979782"
      inkscape:cy="186.9613"
+
      inkscape:document-units="mm"
      inkscape:current-layer="g852"
      showgrid="false"
@@ -111,10 +135,17 @@
     </rdf:RDF>
   </metadata>
   <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="background"
+     transform="translate(-135.49346,-10.595074)" />
+  <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
+
      transform="translate(691.14625,-476.93183)">
+
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:42.33333206px;line-height:1.25;font-family:Constantia;-inkscape-font-specification:'Constantia, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:1;fill:#c85d63;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
@@ -127,10 +158,12 @@
          y="192.3575"
          style="stroke-width:1" /></text>
     <g
+
        id="g852"
        transform="matrix(0.13102882,0,0,0.13102882,-600.58617,463.13048)">
       <g
          transform="matrix(1.1679004,0,0,1.1679004,-672.62107,24.697192)"
+
          id="g849">
         <text
            xml:space="preserve"
@@ -200,7 +233,7 @@
            inkscape:connector-curvature="0"
            inkscape:original-d="m -725.82952,-25.050361 c 2.7e-4,-4.677508 2.7e-4,-9.354751 0,-14.031727 4.13865,-2.65e-4 8.2775,-2.65e-4 12.41587,0"
            transform="matrix(1.0324085,0,0,0.78354891,920.10556,102.79861)"
-           inkscape:path-effect="#path-effect864" />
+           inkscape:path-effect="#path-effect864-8" />
         <rect
            style="opacity:1;fill:#b51f26;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
            id="rect845-4"
@@ -216,7 +249,7 @@
            inkscape:connector-curvature="0"
            inkscape:original-d="m -725.82952,-25.050361 c 2.7e-4,-4.677508 2.7e-4,-9.354751 0,-14.031727 4.13865,-2.65e-4 8.2775,-2.65e-4 12.41587,0"
            transform="matrix(1.0324085,0,0,0.78354891,941.9376,102.79861)"
-           inkscape:path-effect="#path-effect864-9" />
+           inkscape:path-effect="#path-effect864-9-4" />
       </g>
     </g>
   </g>

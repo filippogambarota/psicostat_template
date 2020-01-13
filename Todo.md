@@ -11,6 +11,10 @@
 - [x] Mettere Twitter personale a fianco di contact
 - [x] Pubblicazioni Python
     - Lo script sembra funzionare benone ma l'ho provato in una branch locale per sicurezza
+- [ ] Sistemare il nuovo logo con le lettere greche tutte maiuscole/minuscole e decidere l'ordine
+- [ ] Sistemare la sezione teaching (widget, lista, archtype, ed esempio)
+- [ ] Sistemare la pagina Psicostat
+
 
 ## Claudio
 
@@ -20,4 +24,8 @@
     -[x] Metter il filtro anche nella pagina in cui sono elencati tutti i talks and posters.
 
 - [ ] ragruppare publication e talks & poster a seconda dell'anno
+- [ ] Rivedere Projects
+- [ ] Creare project suggested reading
+- [ ] Rivedere disclaimer privacy e featured by
+
     

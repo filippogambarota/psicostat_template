@@ -6,7 +6,7 @@
 Psicostat_Website.code-workspace
 
 # Hugo auxiliary folders
-/public
+#/public
 /node_modules
 /resources
 

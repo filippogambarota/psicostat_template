@@ -24,8 +24,8 @@
     -[x] Metter il filtro anche nella pagina in cui sono elencati tutti i talks and posters.
 
 - [ ] ragruppare publication e talks & poster a seconda dell'anno
-- [ ] Rivedere Projects
-- [ ] Creare project suggested reading
+- [x] Rivedere Projects
+- [x] Creare project suggested reading
 - [ ] Rivedere disclaimer privacy e featured by
 
     

@@ -21,11 +21,11 @@
 - [x] Sezione Porjects al posto di Experience
 - [x] Filtrare pubblicazioni nella home come `relevant publications`
 - [x] Unire talk e poster e dividerli come i projects (tag)
-    -[x] Metter il filtro anche nella pagina in cui sono elencati tutti i talks and posters.
+    - [x] Metter il filtro anche nella pagina in cui sono elencati tutti i talks and posters.
 
 - [ ] ragruppare publication e talks & poster a seconda dell'anno
 - [x] Rivedere Projects
 - [x] Creare project suggested reading
-- [ ] Rivedere disclaimer privacy e featured by
+- [x] Rivedere disclaimer privacy e featured by
 
     

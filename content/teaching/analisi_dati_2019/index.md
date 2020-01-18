@@ -39,7 +39,7 @@ image:
 links:
   - icon_pack: fas
     icon: university
-    name: Course Website
+    name: Moodle
     url: 'https://www.unipd.it/' # qui mettere il link del corso
 
 url_code: ""

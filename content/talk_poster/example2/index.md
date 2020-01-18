@@ -43,13 +43,14 @@ image:
   focal_point: ""
   preview_only: false
 
-# Custom links (optional).
-#   Uncomment and edit lines below to show custom links.
-# links:
-# - name: Follow
-#   url: https://twitter.com
-#   icon_pack: fab
-#   icon: twitter
+# Github Link
+# Per creare altri custom link semplicemente copiare il blocco qui sotto e cambiare i parametri
+
+links:
+  - icon_pack: fab
+    icon: github
+    name: Github Repository
+    url: '' # qui mettere il link alla repository
 
 # Optional filename of your slides within your talk's folder or a URL.
 url_slides:

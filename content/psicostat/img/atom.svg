@@ -9,11 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-
-   width="60.771214mm"
-   height="56.032307mm"
-   viewBox="0 0 60.771213 56.032307"
-
+   width="101.26525mm"
+   height="57.812637mm"
+   viewBox="0 0 101.26525 57.812638"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
@@ -108,19 +106,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-
      inkscape:zoom="1.6288663"
-     inkscape:cx="9.1979782"
-     inkscape:cy="186.9613"
-
+     inkscape:cx="313.22029"
+     inkscape:cy="184.78637"
      inkscape:document-units="mm"
-     inkscape:current-layer="g852"
+     inkscape:current-layer="layer1"
      showgrid="false"
      showborder="false"
      inkscape:window-width="1920"
-     inkscape:window-height="1000"
-     inkscape:window-x="-11"
-     inkscape:window-y="1339"
+     inkscape:window-height="1027"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata5">
@@ -138,14 +134,12 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="background"
-     transform="translate(-135.49346,-10.595074)" />
+     transform="translate(-28.658692,-8.2392938)" />
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-
-     transform="translate(691.14625,-476.93183)">
-
+     transform="translate(797.98102,-474.57605)">
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:42.33333206px;line-height:1.25;font-family:Constantia;-inkscape-font-specification:'Constantia, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:1;fill:#c85d63;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
@@ -157,13 +151,18 @@
          x="-485.71945"
          y="192.3575"
          style="stroke-width:1" /></text>
+    <rect
+       id="rect53"
+       width="101.26525"
+       height="57.812637"
+       x="-797.98102"
+       y="474.57605"
+       style="fill:none;fill-opacity:1;stroke:none;stroke-width:0.26264077;stroke-opacity:1" />
     <g
-
        id="g852"
-       transform="matrix(0.13102882,0,0,0.13102882,-600.58617,463.13048)">
+       transform="matrix(0.13102882,0,0,0.13102882,-687.55954,463.82427)">
       <g
          transform="matrix(1.1679004,0,0,1.1679004,-672.62107,24.697192)"
-
          id="g849">
         <text
            xml:space="preserve"

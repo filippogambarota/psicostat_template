@@ -1,11 +1,8 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-# Questa pagina crea un nuovo corso nella sezione teaching
-# un consiglio è quello di aggiungere nei tag anche l'anno di corso, ad esempio:
-# tags: [2020]
-# in questo modo se nel widget dei progetti home/projects si inseriscono i filtri
-# poi è semplice visualizzare contenuti divisi per anno
+# Questa pagina crea un nuovo corso nella sezione teaching. Per far funzionare il filtro impostato nel widget (home/teaching.md)
+# inserire il tag: "current" o "past"
 
 title: "{{ replace .Name "-" " " | title }}"
 summary: ""

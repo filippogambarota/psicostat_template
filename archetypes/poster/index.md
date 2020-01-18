@@ -56,7 +56,7 @@ links:
   - icon_pack: fab
     icon: github
     name: Github Repository
-    url: '' # qui mettere il link alla reporisoty
+    url: '' # qui mettere il link alla repository
 
 # Optional filename of your slides within your talk's folder or a URL.
 url_slides:

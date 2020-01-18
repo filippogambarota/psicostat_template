@@ -5,13 +5,13 @@
 # un consiglio è quello di aggiungere nei tag anche l'anno di corso, ad esempio:
 # tags: [2020]
 # in questo modo se nel widget dei progetti home/projects si inseriscono i filtri
-# poi è semplice visualizzarei contenuti divisi per anno
+# poi è semplice visualizzare contenuti divisi per anno
 
 title: "{{ replace .Name "-" " " | title }}"
 summary: ""
 type: "teaching"
 authors: [admin]
-tags: []
+tags: [] # qui si può aggiungere l'anno (senza virgolette)
 categories: []
 date: {{ .Date }}
 
@@ -39,7 +39,7 @@ image:
 links:
   - icon_pack: fab
     icon: university
-    name: Course Website
+    name: Moodle
     url: 'www.unipd.it' # qui mettere il link del corso
 
 url_code: ""

@@ -52,7 +52,7 @@ subtitle = ""
 
 </br>
 
-<div style="float: left; width: 40%; font-size:95%; padding-left:20px" align="justify">
+<div style="float: left; width: 40%; font-size:95%; padding-left:50px" align="justify">
     <a href="https://www.tandfonline.com/doi/full/10.1080/00031305.2019.1583913">
     <img src="img/atom.svg" width="400" align="center">
     </a>

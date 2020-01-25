@@ -6,7 +6,7 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 1  # Order that this section will appear.
 
-title = "About us"
+title = ""
 subtitle = ""
 
 [design]
@@ -47,21 +47,29 @@ subtitle = ""
  # CSS class.
  css_class = ""
 +++
-<a href="https://www.tandfonline.com/doi/full/10.1080/00031305.2019.1583913">
-<img src="img/atom.svg" width="250" align="left">
-</a>
 
-<div style="float: left; width: 40%; font-size:95%; padding-left:20px" align="justify">
-    We are an interdisciplinary research group interested in <b>Psychology</b> and <b>Statistics</b>, working in areas related to <b>quantitative psychology</b>, <b>psychometrics</b>, <b>psychological testing</b> and <b>statistics</b>.
-    Our goal is to promote the connection between the two fields in order to benefit the progress of scientific research. We are located in the <a href="https://www.dpss.unipd.it/en/">Department of Developmental Psychology and Socialisation</a> at <a href="https://www.unipd.it/en/">University of Padua</a>.
+<h2> About Us </h2>
+
+</br>
+
+<div style="float: left; width: 40%; font-size:95%; padding-left:50px" align="justify">
+    <a href="https://www.tandfonline.com/doi/full/10.1080/00031305.2019.1583913">
+    <img src="img/atom.svg" width="400" align="center">
+    </a>
+
+  </br>
+
+  We are an interdisciplinary research group interested in <b>Psychology</b> and <b>Statistics</b>, working in areas related to <b>quantitative psychology</b>, <b>psychometrics</b>, <b>psychological testing</b> and <b>statistics</b>.
+  Our goal is to promote the connection between the two fields in order to benefit the progress of scientific research. We are located in the <a href="https://www.dpss.unipd.it/en/">Department of Developmental Psychology and Socialisation</a> at <a href="https://www.unipd.it/en/">University of Padua</a>.
+
 </div>
 
-<div style="float: right; width: 35%">
+<div style="float: right; width: 50%">
 <ul>
 <a class="twitter-timeline"
     href="https://twitter.com/psicostat?ref_src=twsrc%5Etfw"
-    data-width="500"
-    data-height="250">
+    data-width="700"
+    data-height="600">
     Tweets by psicostat</a>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </ul>

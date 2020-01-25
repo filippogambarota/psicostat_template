@@ -7,6 +7,7 @@ authors: []
 tags: []
 categories: []
 date: 2019-12-29T10:12:08+01:00
+show_homepage: true
 
 # Optional external URL for project (replaces project detail page).
 external_link: "https://github.com/filippogambarota/psicostat_template"

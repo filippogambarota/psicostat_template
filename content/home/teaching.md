@@ -22,21 +22,21 @@ subtitle = ""
   filter_default = 0
   
 # Questo è il widget degli insegnamenti con la funzione di filtraggio dei contenuti
-# un consiglio è quello di mettere un filtro per anno così da avere graficamente la divisione
-# basta copiare uno di questi filtri sotto cambiando "name" e "tag" con l'anno.
-# se nel singolo insegnamento si mette il tag corrispondente allora i contenuti vengono filtrati
-  
+# Nel widget è presente un filtro che permette di visualizzare nella home i corsi passati e presenti
+# oppure tutti. Per far funzionare il filtro è sufficiente inserire nella pagina del singolo corso il tag: "current"
+# oppure "old". Se non si vuole la funzionalità basta commentare (#) o eliminare le seguenti linee di codice
+
   [[content.filter_button]]
     name = "All"
     tag = "*"
+
+  [[content.filter_button]]
+    name = "Past Years"
+    tag = "past"
   
   [[content.filter_button]]
-    name = "2019"
-    tag = "2019"
-  
-  [[content.filter_button]]
-    name = "2020"
-    tag = "2020"
+    name = "Current"
+    tag = "current"
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.

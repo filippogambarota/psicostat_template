@@ -13,7 +13,7 @@
    viewBox="0 0 3257.8931 3761.8909"
    preserveAspectRatio="xMidYMid meet"
    id="svg29"
-   sodipodi:docname="Psicostat_hexagon.svg"
+   sodipodi:docname="logo_2.svg"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
    inkscape:label="Layer">
   <metadata
@@ -103,13 +103,13 @@
      inkscape:window-height="1027"
      id="namedview31"
      showgrid="false"
-     inkscape:zoom="0.82460802"
-     inkscape:cx="319.21334"
-     inkscape:cy="147.42967"
+     inkscape:zoom="1.1661718"
+     inkscape:cx="162.56379"
+     inkscape:cy="130.99808"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer4" />
+     inkscape:current-layer="layer3" />
   <g
      inkscape:groupmode="layer"
      id="layer1"
@@ -196,7 +196,7 @@
      inkscape:label="Sigma/Psi"
      transform="translate(1330.0506,1945.5626)">
     <g
-       transform="matrix(1.0100837,0,0,0.96066381,-212.69944,-1298.0698)"
+       transform="matrix(1.0100837,0,0,0.96066381,-1621.238,-1298.0698)"
        style="visibility:visible;fill:#f2b1b1;fill-opacity:1;fill-rule:evenodd"
        visibility="visible"
        id="page1">
@@ -261,7 +261,7 @@
     </g>
     <path
        inkscape:connector-curvature="0"
-       d="m -1071.1852,-872.11263 1.3665,50.50799 633.07806,772.281113 -640.10016,745.268057 -1.8487,46.93378 1241.21557,-6.29486 c 12.12188,-150.32257 45.4219,-305.7709 73.95536,-453.98801 l -40.33937,-9.86934 c -37.59275,82.99433 -64.31763,171.7489 -144.54914,226.85584 -87.96005,60.41311 -204.03646,52.77444 -305.90664,52.77444 h -571.4738 l 582.52833,-688.61038 -525.23554,-642.55362 305.76105,-1.19156 c 196.01216,0 474.85115,-46.3286 552.41015,184.22704 13.25834,39.41135 22.44892,80.33935 25.78706,121.72134 h 43.70096 l -33.6162,-398.06183 z"
+       d="m 424.68652,-872.11263 1.3665,50.50799 633.07808,772.281113 -640.10018,745.268057 -1.8487,46.93378 1241.21558,-6.29486 c 12.1219,-150.32257 45.4219,-305.7709 73.9554,-453.98801 l -40.3394,-9.86934 c -37.5928,82.99433 -64.3176,171.7489 -144.5491,226.85584 -87.9601,60.41311 -204.0365,52.77444 -305.9067,52.77444 H 670.08422 L 1252.6125,-136.254 727.37702,-778.80762 l 305.76108,-1.19156 c 196.0121,0 474.8511,-46.3286 552.4101,184.22704 13.2583,39.41135 22.4489,80.33935 25.7871,121.72134 h 43.7009 L 1621.42,-872.11263 Z"
        style="font-size:12px;fill:#f2b1b1;fill-opacity:1;fill-rule:evenodd;stroke-width:3.32549524"
        id="path603" />
   </g>

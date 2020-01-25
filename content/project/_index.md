@@ -2,6 +2,6 @@
 header:
   caption: ""
   image: ""
-title: Posters
+title: Projects & Interests
 view: 2
 ---

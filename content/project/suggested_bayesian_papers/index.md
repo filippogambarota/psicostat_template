@@ -1,16 +1,15 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-# Questa pagina crea un nuovo corso nella sezione teaching. Per far funzionare il filtro impostato nel widget (home/teaching.md)
-# inserire il tag: "current" o "past"
-
-title: "{{ replace .Name "-" " " | title }}"
-summary: ""
-type: "teaching"
-authors: [admin]
-tags: [] # qui si può aggiungere l'anno (senza virgolette)
+title: "Suggested Bayesian Papers"
+summary: "My favourite Bayesian papers"
+authors: []
+tags: []
 categories: []
-date: {{ .Date }}
+date: 2020-01-13T17:47:35+01:00
+
+# Option to display content in the homepage
+show_homepage: true
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""
@@ -31,14 +30,6 @@ image:
 #   icon_pack: fab
 #   icon: twitter
 
-# questo è un link custom per il sito unipd dell'insegnamento
-
-links:
-  - icon_pack: fab
-    icon: university
-    name: Moodle
-    url: 'www.unipd.it' # qui mettere il link del corso
-
 url_code: ""
 url_pdf: ""
 url_slides: ""
@@ -51,3 +42,11 @@ url_video: ""
 #   Otherwise, set `slides = ""`.
 slides: ""
 ---
+
+In this tread I list my favourite Bayesian paper that explain....
+
+
+# Introuction to Bayesian Analysis
+
+- [A gentle introduction to bayesian analysis: applications to developmental research.](https://doi.org/10.1111/cdev.12169) Rens van de Schoot et al. (2013)
+- other..

@@ -8,13 +8,13 @@
   - [Website Structure](#website-structure)
   - [Settings and personal information](#settings-and-personal-information)
   - [Home](#home)
-  - [New contents](#new-contents)
-    - [How to create a new content?](#how-to-create-a-new-content)
+  - [Contents folders](#contents-folders)
+  - [Contents types](#contents-types)
+  - [How to create a new content?](#how-to-create-a-new-content)
       - [Available templates](#available-templates)
       - [Link to other files](#link-to-other-files)
-    - [Save and upload all modifications](#save-and-upload-all-modifications)
-      - [Commit and Push](#commit-and-push)
-  - [Useful Links](#useful-links)
+- [Save and upload all modifications](#save-and-upload-all-modifications)
+- [Useful Links](#useful-links)
 
 # Get ready with Psicostat Template
 
@@ -138,7 +138,7 @@ I file da modificare riguardanti le impostazioni del sito e le informazioni pers
 
 A questo punto le informazioni di base nostre e del sito sono inserite. Il prossimo passo è capire il funzionamento della home. I file da modificare riguardanti la home sono:
 
-1. `config/_default/menus.toml` contiene le informazioni riguardanti la barra del menù. Nel caso in cui non si voglia includere una sezione è preferibile commentarla invece che eliminarla.
+1. `config/_default/menus.toml` contiene le informazioni riguardanti la barra del menù. Nel caso in cui non si voglia includere una sezione è preferibile commentarla invece che eliminarla. E' possibile creare nuove sezioni che rimandino a link esterni (un sito web).
 2. Nella cartella `content/home` sono presenti diverse pagine `.md`  che definiscono le varie sezioni che appaiono nella pagina home. Le varie sezioni sono basate su dei `widget`, ovvero degli elementi con particolari caratteristiche di struttura, aspetto e funzionalità definite dal tema del sito. All'interno di ogni pagina `.md` vi è una prima parte racchiuse tra `+++` (concettualmente è identico al codice YALM racchiuso tra `---` prima di un documento in KNITR) in cui sono indicate le opzioni di configurazione del widget. Successivamente è posssibile includere del testo direttamente in linguaggio Markdown o HTML (per alcune feature avanzate). Ogni funzione di configurazione è documentata con dei commenti dell'autore. Particolarmente importanti sono il parametro `active = true/false` che indica se la sezione venga inclusa oppure no nella pagina home, il parametro `weight =`  che indica l'ordine di visualizzazione nella pagina e il parametro `page_type =` che, quando presente, indica la la cartella dei contenuti mostrati (`poster`, `pubblication`, `talk_poster` etc.).
 
 Per conoscere di più sui widget e le loro opzioni di configurazione considera la [documentazione ufficiale](https://sourcethemes.com/academic/docs/page-builder/) di Academic. Alcuni widgets sono stati modificati appositamente per Psicostat template come ad esempio quelli su cui si basano le sezioni `projects.md`, `talks_posters.md` o `psicostat.md`. Altre sezioni personalizzate possono  essere create partendo dai widget di base presenti in Academic.
@@ -147,9 +147,9 @@ Per collegare una nuova sezione alla barra del menù è necessario aggiungere un
 
 ##  Contents folders
 
-Ora il sito è strutturato e organizzato. Le varie pagine del sito sono raccolte all'interno della cartella `content/` e vengono ragruppate in cartelle a seconda della tipologia di contenuto. Psicostate template oltre alla cartella `home/` presentata nella sezione precedente, si basa sulle cartelle `post/`, `project/`, `publication/`, `talk_poster/`, `teching/` e `psicostat/`. All'interno di ogni cartella troviamo uno speciale file `_index.md` che permette di creare una pagina con l'elenco di tutti i contenuti di quella specifica cartella. In Psicostat template queste pagine sono visualizzate premendo le varie sezioni dalla barra del menù. 
+Ora il sito è strutturato e organizzato. Le varie pagine del sito sono raccolte all'interno della cartella `content/` e vengono ragruppate in cartelle. Psicostate template oltre alla cartella `home/` presentata nella sezione precedente, si basa sulle cartelle `post/`, `project/`, `publication/`, `talk_poster/`, `teching/` e `psicostat/`. All'interno di ogni cartella troviamo uno speciale file `_index.md` che permette di creare una pagina con l'elenco di tutti i contenuti di quella specifica cartella. In Psicostat template queste pagine sono visualizzate premendo le varie sezioni dalla barra del menù. 
 
-Per collegare un nuova cartella con una nuova tipologia di contenuto alla barra del menù è necessario aggiungere un nuovo campo nel file `config/_default/menus.toml` dove `name` indica il nome da visualizzare e `nome/` indica il nome della cartella in `content/` con i nuovi contrenuti ed un file `_index.md`.
+Per collegare un nuova cartella alla barra del menù è necessario aggiungere un nuovo campo nel file `config/_default/menus.toml` dove `name` indica il nome da visualizzare e `nome/` indica il nome della cartella in `content/` con i nuovi contrenuti ed un file `_index.md`.
 
 Nella cartella `content/` troviamo anche la pagina `terms.md` con le note relative alla licenza dei contenuti e la pagina `privacy.md` con le note relative alla prprivacy (particolarmente importante nel caso si attivino i cookies per google alytics).
 
@@ -157,11 +157,11 @@ Nella cartella `content/` troviamo anche la pagina `terms.md` con le note relati
 
 I vari contenuti del sito si distinguono a seconda della loro tipologia. Abbiamo `project`, `post`, `publication`, `poster`, `talk` e `teaching`. Per ogni topologia esiste uno specifico [archetype](https://gohugo.io/content-management/archetypes/) che viene usato come template di base quando si creano nuovi contenuti da terminale con i [comandi](#how-to-create-a-new-content) di `hugo`. 
 
-Ogni contenuto ha una propria cartella con un file `index.md` dove in una prima parte si trovano tutte le informazioni e meta-data riguardo alla pagina  racchiusi tra `---` (linguaggio YAML) sulla base del proprio archetype. Sucessivamente si trova il contenuto della pagina direttamente in linguaggio Markdown o HTML (per alcune feature avanzate).
+Ogni contenuto ha una propria cartella con un file `index.md` dove in una prima parte si trovano tutte le informazioni e meta-data riguardo alla pagina, sulla base del proprio archetype, racchiusi tra `---` (linguaggio YAML). In particolare si possono inserire i link per indirizzare ad altro materiale come poster, database, repository e così via. Sucessivamente si trova il contenuto della pagina direttamente in linguaggio Markdown o HTML (per alcune feature avanzate). Ulteriori file utilizatti, quali ad esempio immagini, possono essere inseriti direttamente nella cartella.
 
 All'interno di `content/` sono presenti numerosi esempi che oltre a far capire cosa e come scrivere il contenuto vero e proprio fanno vedere anche come organizzare le cartelle. Ad esempio la cartella `content/publication` contiene le varie pubblicazioni (una per cartella) che verranno poi visualizzate sia nella sezione della home (in numero limitato a senconda delle impostazioni) sia nella pagina **Publications**. 
 
-### How to create a new content?
+## How to create a new content?
 
 Per creare un nuovo contenuto sarebbe semplicemente necessario creare un nuovo file Markdown con l'intestazione uguale a quella di un articolo già presente e poi inserire le informazioni. Un modo più semplice però consiste nell'utilizzare le funzioni di Hugo per creare dei contenuti.
 
@@ -171,30 +171,42 @@ Se apriamo il terminale nella root del nostro sito e digitiamo:
 hugo new --kind #tipo_template cartella/nome_file
 ```
 
-Automaticamente si crea una cartella nel percorso selezionato con un file Markdown strutturato secondo il template indicato. Se vogliamo ad esempio creare una nuova pubblicazione possiamo digitare:
+Automaticamente si crea una cartella nel percorso selezionato con un file Markdown strutturato secondo il template indicato. 
 
 #### Available templates
 
 Le tipologie di template disponibili (argomento #tipo_template) in questo adattamento del tema sono:
-* publication
-* talk
+
+* projects
+* post
+* publication (nuovo rispetto al tema standard)
+* talk (nuovo rispetto al tema standard)
 * poster (nuovo rispetto al tema standard)
 * teaching (nuovo rispetto al tema standard)
-* post
 
-Sono disponibili anche altri contenuti come i projects ma per il momento sono stati disattivati.
+Di seguito sono indicati vari comandi per creare nuovi contenuti rispettando l'organizzazione di Psicostat template.
+
+| New File    | Archetype   | Folder      | Comand line |
+|-------------|-------------|-------------|-------------|
+| Project     | project     | project     | `hugo new --kind project project/<name_file>` |
+| Post        | post        | post        | `hugo new --kind post post/<name_file>` |
+| Publication | publication | publication | `hugo new --kind publication publication/<name_file>` |
+| Talk        | talk        | talk_poster | `hugo new --kind talk talk_poster/<name_file>` |
+| Poster      | poster      | talk_poster | `hugo new --kind poster talk_poster/<name_file>` |
+| Teaching    | teaching    | teaching    | `hugo new --kind teaching teaching/<name_file>` |
+
 
 #### Link to other files
 
 Nei vari contenuti che scriviamo o a cui vogliamo collegarci con un link c'è la possibilità di inserire dei file che risiedono effettivamente nel sito come immagini, i full-text degli articoli o altro materiale.
 
-Ad esempio se nell'articolo vogliamo inserire un link al pdf (`url_pdf =`)possiamo mettere un link web per esempio al full-text della rivista o al sito stesso del database oppure creare un link ad un file che effettivamente è memorizzato nel sito. 
+Ad esempio se nell'articolo vogliamo inserire un link al pdf (`url_pdf =`) possiamo mettere un link web per esempio al full-text della rivista o al sito stesso del database oppure creare un link ad un file che effettivamente è memorizzato nel sito. 
 
 Tutti i file sono contenuti nella cartella `static` oppure nella cartella specifica del contenuto.
 * Se il file/immagine è contenuto nell cartella static: **inserire la path al file senza la cartella static** e quindi per esempio se abbiamo un pdf nella cartella static semplicemente inserire il link come `nome.pdf`. Nel caso fosse in sottocartelle inserire `folder/nome.pdf`.
 * Se il file/immagine è all'interno nella cartella del contenuto specifico tipo: `post/il_mio_post` come nel caso precedente inserire direttamente `file.estensione` oppure `cartella/file.estensione` nel caso sia in una sottocartella.
 
-### Save and upload all modifications
+# Save and upload all modifications
 
 Questo è sicuramente lo step più importante. Tutte le modifiche che sono state fatte fino ad ora saranno state sicuramente visualizzate nella **versione locale** del sito (con il comando `hugo server`). Per salvare una modifica è sufficiente semplicemente salvare il file dove questa è stata fatta. **Se il sito viene compilato senza errori significa che anche la versione online non avrà problemi.**
 
@@ -203,25 +215,14 @@ Tutte le modifiche locali però devono passare per altri 2 importanti step per e
 1. Deve essere effettuato un `commit` tramite GIT (quindi in locale) con un messaggio di commit sensato in modo da rendere più facile tornare indietro per eventuali errori.
 2. Effettuare il `push` delle modifiche alla repository Github (quindi online). A questo punto Netlify rileverà le modifiche e il sito sarà aggiornato in qualche minuto.
 
-
-<div style="color:red">
-Il logo e in generale tutte le immagini sono contenute nella cartella `static/img` quindi è sufficiente cambiare l'immagine e inserire il nome nei file di configurazione per cambiare anche il logo.
-
-
-Nel file `config/_default/menus.toml` abbiamo le sezioni che vengono visualizzate in alto dove  
-Ovviamente è possibile creare una sezione con un link esterno (un sito web) oppure,come indicato in fondo al file `menus.toml` ad un CV in formato pdf.
-</div>
-
-#### Commit and Push
-
-Per effettuare il commit e il push si possono utilizzare i comandi GUI del programma che usiamo oppure scrivere da terminale:
+Per effettuare il commit e il push si possono utilizzare i comandi GUI del programma che usiamo (nel caso di Rstudio vedi [link](http://r-pkgs.had.co.nz/git.html)) oppure scrivere da terminale:
 
 ```git
 git add -A #per aggiungere tutte le modifiche al commit
 git commit -m "Message" #commit con messaggio
 git push #mandare tutte le modifiche a Github
 ```
-## Useful Links
+# Useful Links
 
 Ci sono due fonti principali per approfondire la documentazione:
 

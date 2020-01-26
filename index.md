@@ -103,24 +103,36 @@ Il fatto che il sito sia compilato senza errori e venga visualizzato significa c
 
 ## Website Structure
 
-La cartella principale del sito contiene:
+Nella cartella principale del sito troviamo:
+
 * Il file `.Rproj` che permette di aprire e gestire il sito con RStudio essendo che è stato creato inizialmente con il pacchetto **blogdown**.
 * Il file `config.toml` che contiene la configurazione di base del sito.
 * Il file `netlify.toml` che contiene i settaggi per il deploying online
-* La cartella `public` che sarebbe la versione compilata del sito che viene mandata online (in altri termini le pagine scritte in Markdown o RMarkdown vengono compilate in HTML e inserite nella cartella per la visualizzazione da browser)
-* La cartella `content` che contiene tutte i file e le immagini del sito. Questa cartella sarà quella che maggiormente verrà modificata.
-* La cartella `data` che ho creato per contenere i file `.toml` del tema modificato. In pratica modificando i parametri dentro questa cartella il tema (colori, fonts) verra cambiato all'intero sito.
+* La cartella `content` che contiene tutti i file e le immagini delle varie sezioni del sito del sito. Questa cartella sarà quella che maggiormente verrà modificata.
+* La cartella `static` che contiene file e materiale che si vogliono visualizzare nel sito come ad esempio il proprio **CV**.
+* La cartella `data` che contiene i file `.toml` del tema modificato,che determinano colori e  fonts dell'intero sito.
 * La cartella `config` che contiene altri file di configurazione di base (simili a `config.toml`) del sito come la **lingua**, tutte le **informazioni di contatto**, le eventuali **mappe** da visualizzare, i **link ai social network** e sopratutto la **struttura del menu home**.
+* La cartella `public` contiene la versione compilata del sito che viene mandata online (in altri termini le pagine scritte in Markdown o RMarkdown vengono compilate in HTML e inserite nella cartella per la visualizzazione da browser).
 
-### Theme
+### Psicostat template and Academic Theme 
 
-La cartella `theme` non andrebbe modificata se non per cambiare gli [archetypes](https://gohugo.io/content-management/archetypes/). Questi non sono altro che i template che verranno utilizzati quando si useranno i [comandi](#how-to-create-a-new-content) di `hugo` per la creazione di contenuti.
+La cartella `theme` contiene la struttura di default del tema Academic. Questa cartella non va assolutamente modificata.
 
+Le restanti cartelle (`archetypes`, `assets`, `i18n` e `layouts`) contengono i file utilizzati per definire i cambiamenti del template psicostat rispetto al tema Academic. Anche questi file non andrebbero modificati a meno che non si voglia modificare e personalizzare il funzionamento del sito.
+
+
+<div style="color:red">
 All'interno della cartella `theme/layouts` ci sono invece le tipologie di contenuti che possiamo creare (anche qui personalizzabili) come le pubblicazioni, i talk e cosi via.
+
+
+se non per cambiare gli [archetypes](https://gohugo.io/content-management/archetypes/). Questi non sono altro che i template che verranno utilizzati quando si useranno i [comandi](#how-to-create-a-new-content) di `hugo` per la creazione di contenuti. 
+
+</div>
+
 
 ## First modifications
 
-Un buon modo di modificare il sito web è quello di lanciare subito il comando `hugo server`. Questo oltre a controllare la struttura permette di avere un indirizzo locale dove tutte le modifiche vengono visualizzate in tempo reale. Cosi una volta soddisfatti possiamo effettuare il **commit** ed il **push**.
+Un buon modo di modificare il sito web è quello di compilare il sito con il comando `Serve Site` di Rstudio o da terminale eseguire `hugo server`. Questo, oltre a controllare la struttura, permette di avere un indirizzo locale dove tutte le modifiche vengono visualizzate in tempo reale. Così una volta soddisfatti possiamo effettuare il **commit** ed il **push**.
 
 Le prime cose che consiglio di fare sono:
 

@@ -6,7 +6,7 @@
   - [Compile the website](#compile-the-website)
 - [How to manage the website](#how-to-manage-the-website)
   - [Website Structure](#website-structure)
-  - [First modifications](#first-modifications)
+  - [Settings and personal information](#settings-and-personal-information)
   - [Home](#home)
   - [New contents](#new-contents)
     - [How to create a new content?](#how-to-create-a-new-content)
@@ -94,7 +94,7 @@ hugo server
 
 Il fatto che il sito sia compilato senza errori e venga visualizzato significa che non ci sono problemi nella struttura.
 
-# How to manage the website?
+# How to manage the website
 
 La documentazione di [Hugo](https://gohugo.io/documentation/) e del [tema Academic](https://sourcethemes.com/academic/docs/) sono veramente ottime e complete. Tuttavia, inizialmente la  struttura del sito risulta coplessa poichè vengono utilizzati molti file con diversi linguaggi (GO, TOML, HTML, CSS e Markdown).
 
@@ -120,51 +120,36 @@ All'interno della cartella principale ci sono altri file e cartelle che contengo
 * la cartella `theme`  che contiene la struttura di default del tema Academic. Questa cartella non va assolutamente modificata.
 * Le restanti cartelle (`archetypes`, `assets`, `i18n` e `layouts`) che contengono i file utilizzati per definire i cambiamenti del template psicostat rispetto al tema Academic. Anche questi file non andrebbero modificati a meno che non si voglia modificare e personalizzare la struttura o il funzionamento del sito.
 
+Tutti i file riportano numerosi commenti per chiarire quali sono le varie funzioni. E' consigliato non cancellare nessun commento e rispettare la stuttura degli esempi presentati. Inoltre, nel caso in cui non si voglia includere una parte, è preferibile commentarla invece che eliminarla per renderla facilmente disponibile in un secondo momento.
+
 ## Settings and personal information
 
-I file da modificare per inserire le proprie informazioni riportano molti commenti per chiarire quali sono le varie funzioni. E' consigliato non cancellare nessun commento e rispecchiare la stuttura degli esempi presentati. I file da modificare sono:
+I file da modificare riguardanti le impostazioni del sito e le informazioni personali sono:
 
 1. `config.toml`. Si devono inserire il proprio nome e cognome sia nel campo `title` che nel campo `copyright`. Le altre opzioni non vanno cambiate.
 2. `content/authors/admin/_index.md`. Qui vanno inserite le informazioni del proprio profilo che sono visualizzate nella homepage. Dato che il sito supporta diversi autori con diversi profili se si modifica l'autore principale (`admin`) ogni volta che in un post o pubblicazione inseriamo `admin` come autore automaticamente si farà riferimento al proprio profilo con le informazioni associate. Ci sono vari campi come `bio` (breve descrizione che viene visualizzata al termine dei contenuti), `education`, `interests`, informazioni personali e link social con le icone. Nel caso in cui non si voglia includere una parte è preferibile commentarla invece che eliminarla. Al termine del file dove è presente il testo "Nelson Bighetti..." è possibile inserire la propria biografia che è visualizzata nella homepage. **Attenzione** non rimuovere la parte `[Curriculum Vitae](files/cv.pdf)` che crea il link al propri CV.
-3. `content/authors/admin/avatar.jpg` sostituire con la propria immagine profilo che appare nella homepage. Il nome dell'immagine deve rimanere `avatar.jpg`.
-4. `config/_default/params.toml` Si possono definire ulteriori opzioni riguardanti il sito. In particolare, nella sezione `Contact details` vanno inserite le proprie informazioni quali email e indirizzo. Nel caso in cui non si voglia includere una parte è preferibile commentarla invece che eliminarla. Altre opzioni che potrebbero interessare sono l'utilizzo di google analytics o l'attivazione di commenti. Per ulteriori informazioni consultare la documentazione ufficiale di [Academic](https://sourcethemes.com/academic/docs/customization/#analytics).
-5. `static/files/cv.pdf` sostituire il proprio CV in formato pdf mantenendo il nome del file `cv.pdf`.
+3. `content/authors/admin/avatar.jpg` sostituire con la propria immagine profilo che apparirà nella homepage. Il nome dell'immagine deve rimanere `avatar.jpg`.
+4. `config/_default/params.toml` Si possono definire ulteriori opzioni riguardanti il sito. In particolare, nella sezione `Contact details` vanno inserite le proprie informazioni quali email e indirizzo. Nel caso in cui non si voglia includere una parte è preferibile commentarla invece che eliminarla. Altre opzioni che potrebbero interessare sono l'utilizzo di google analytics o l'attivazione di commenti. Per ulteriori informazioni consultare la [documentazione ufficiale](https://sourcethemes.com/academic/docs/customization/#analytics) di Academic.
+5. `static/files/cv.pdf` sostituire con il proprio CV in formato pdf. Il nome del file deve rimanere `cv.pdf`.
+6. `content/home/contact.md` è possibile inserire il proprio personale feed di twitter sostituendo il link presente nella sezione in fondo al file.
 
 
 ## Home
 
-Per quanto riguarda i contenuti del sito
-
+A questo punto le informazioni di base nostre e del sito sono inserite. Il prossimo passo è capire il funzionamento della home. I file da modificare riguardanti la home sono:
 
 1. `config/_default/menus.toml` contiene le informazioni riguardanti la barra del menù. Nel caso in cui non si voglia includere una sezione è preferibile commentarla invece che eliminarla.
-2.
+2. Nella cartella `content/home` sono presenti diverse pagine `.md`  che definiscono le varie sezioni che appaiono nella pagina home. Le varie sezioni sono basate su dei `widget`, ovvero degli elementi con particolari caratteristiche di struttura, aspetto e funzionalità definite dal tema del sito. All'interno di ogni pagina `.md` vi è una prima parte racchiuse tra `+++` (concettualmente è identico al codice YALM racchiuso tra `---` prima di un documento in KNITR) in cui sono indicate le opzioni di configurazione del widget. Successivamente è posssibile includere del testo direttamente in linguaggio Markdown o HTML (per alcune feature avanzate). Ogni funzione di configurazione è documentata con dei commenti dell'autore. Un'aspetto importante è il parametro `active = true/false` che indica se la sezione venga inclusa oppure no nella pagina home, mentre il parametro `weight =`  indica l'ordine di visualizzazione nella pagina.
 
 
-1. Aprire i vari file di configurazione `.toml` e cambiare le impostazioni desiderate come contatti, link e nome del sito. Il logo e in generale tutte le immagini sono contenute nella cartella `static/img` quindi è sufficiente cambiare l'immagine e inserire il nome nei file di configurazione per cambiare anche il logo. Se non è necessario per il momento non cambiare la struttura della home nel file `menus.toml`.
-2. Prima dei contenuti veri e propri è utile aggiornare il proprio profilo come autore.  Per modificare il profilo autore andare su `content/authors/admin/_index.md`. Ci sono varie informazioni da inserire come i link social con le icone.
-3. E' inoltre possibile inserire l'immagine del profilo che appare nella pagina personale sostituendo e rinominando la foto come 
+Per conoscere di più sui widget e le loro opzioni di configurazione considera la [documentazione ufficiale](https://sourcethemes.com/academic/docs/page-builder/) di Academic. Alcuni widgets sono stati modificati appositamente per Psicostat template come ad esempio `projects.md`, `talks_posters.md` o `psicostat.md`. Altre sezioni personalizzate possono  essere create partendo dai widget di base presenti in Academic.
 
+Per collegare una nuova sezione alla barra del menù è necessario aggiungere un nuovo campo nel file `config/_default/menus.toml` dove `name` indica il nome da visualizzare e `#nome` indica il nome del file `.md` all'interno della cartella `content/home`. In questo modo quando viene premuto il collegamento in alto, il sito indirizza alla parte della home corrispondente.
 
-
-A questo punto le informazioni di base nostre e del sito sono inserite. Il prossimo passo è capire il funzionamento della schermata home. Nella cartella `content/home` sono contenute le varie pagine `.md` con le informazioni che appaiono nella schermata home.
-
-Le varie pagine sono create su dei `widget` base che fanno parte del tema e che sono il punto di partenza per creare delle sezioni personalizzate. Ad esempio la sezione **Psicostat** non è altro che un `widget blank` ([link alla documentazione per informazioni sui widget](https://sourcethemes.com/academic/docs/page-builder/)) dove sono stati inseriti il feed di twitter, un'immagine e un titolo.
-
-I vari widget hanno delle caratteristiche di struttura, aspetto e funzionalità. Ad esempio la pagina `Skill` è basata sul widget `featurette` che permette di creare quelle icone a blocchi che indicano le nostre skills in modo grafico. All'interno delle pagine nella cartella home ci sono dei comandi di configurazione racchiusi tra `+++` (concettualmente è identico al codice YALM racchiuso tra `---`prima di un documento in KNITR) e il testo che viene scritto direttamente in Markdown ma anche in HTML (per alcune feature avanzate). Ogni funzione di configurazione è documentata con dei commenti dell'autore.
-
-Un'aspetto importante è il parametro `weight =` che indica l'ordine di visualizzazione nella pagina. Diverse invece sono le sezioni in alto nella home. Sostanzialmente possiamo creare una nuova sezione della home, come **Psicostat** e collegarla ad un widget nella pagina principale.
-
-Nel file `config/_default/menus.toml` abbiamo le sezioni che vengono visualizzate in alto dove `name` indica il nome da visualizzare e `#nome` indica il nome del file `.md` all'interno della cartella `content/home`. In questo modo quando viene premuto il collegamento in alto, il sito indirizza alla sezione corrispondente.
-Ovviamente è possibile creare una sezione con un link esterno (un sito web) oppure,come indicato in fondo al file `menus.toml` ad un CV in formato pdf.
 
 ## New contents
 
-<div style="color:red">
-All'interno della cartella `theme/layouts` ci sono invece le tipologie di contenuti che possiamo creare (anche qui personalizzabili) come le pubblicazioni, i talk e cosi via.
 
-
-se non per cambiare gli [archetypes](https://gohugo.io/content-management/archetypes/). Questi non sono altro che i template che verranno utilizzati quando si useranno i [comandi](#how-to-create-a-new-content) di `hugo` per la creazione di contenuti. 
-</div>
 
 
 Ora il sito è strutturato e organizzato. Per creare nuovi contenuti ci sono varie modalità e quindi vi presento la modalità che mi sembra più semplice ed efficace. All'interno della cartella `content` abbiamo tutti i vari tipi di contenuti disponibili. Il sito di base fornisce degli esempi che oltre a far capire cosa e come scrivere il contenuto vero e proprio fa vedere anche come organizzare le cartelle. Ad esempio la cartella `content/publication` contiene le varie pubblicazioni (una per cartella) che verranno poi visualizzate nella sezione **Publications** che abbiamo visto prima nella cartella `content/home`. Il file `index.md` contiene alcuni elementi tipici del template per le pubblicazioni già presente nel tema. Anche qui ci sono delle info di base contenute in linguaggio YAML `---` con inoltre dei link da mettere per altro materiale come poster, database, repository e così via.
@@ -210,6 +195,20 @@ Tutte le modifiche locali però devono passare per altri 2 importanti step per e
 
 1. Deve essere effettuato un `commit` tramite GIT (quindi in locale) con un messaggio di commit sensato in modo da rendere più facile tornare indietro per eventuali errori.
 2. Effettuare il `push` delle modifiche alla repository Github (quindi online). A questo punto Netlify rileverà le modifiche e il sito sarà aggiornato in qualche minuto.
+
+
+<div style="color:red">
+All'interno della cartella `theme/layouts` ci sono invece le tipologie di contenuti che possiamo creare (anche qui personalizzabili) come le pubblicazioni, i talk e cosi via.
+
+
+se non per cambiare gli [archetypes](https://gohugo.io/content-management/archetypes/). Questi non sono altro che i template che verranno utilizzati quando si useranno i [comandi](#how-to-create-a-new-content) di `hugo` per la creazione di contenuti. 
+
+Il logo e in generale tutte le immagini sono contenute nella cartella `static/img` quindi è sufficiente cambiare l'immagine e inserire il nome nei file di configurazione per cambiare anche il logo.
+
+
+Nel file `config/_default/menus.toml` abbiamo le sezioni che vengono visualizzate in alto dove  
+Ovviamente è possibile creare una sezione con un link esterno (un sito web) oppure,come indicato in fondo al file `menus.toml` ad un CV in formato pdf.
+</div>
 
 #### Commit and Push
 

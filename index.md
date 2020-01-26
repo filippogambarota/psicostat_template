@@ -139,20 +139,27 @@ I file da modificare riguardanti le impostazioni del sito e le informazioni pers
 A questo punto le informazioni di base nostre e del sito sono inserite. Il prossimo passo è capire il funzionamento della home. I file da modificare riguardanti la home sono:
 
 1. `config/_default/menus.toml` contiene le informazioni riguardanti la barra del menù. Nel caso in cui non si voglia includere una sezione è preferibile commentarla invece che eliminarla.
-2. Nella cartella `content/home` sono presenti diverse pagine `.md`  che definiscono le varie sezioni che appaiono nella pagina home. Le varie sezioni sono basate su dei `widget`, ovvero degli elementi con particolari caratteristiche di struttura, aspetto e funzionalità definite dal tema del sito. All'interno di ogni pagina `.md` vi è una prima parte racchiuse tra `+++` (concettualmente è identico al codice YALM racchiuso tra `---` prima di un documento in KNITR) in cui sono indicate le opzioni di configurazione del widget. Successivamente è posssibile includere del testo direttamente in linguaggio Markdown o HTML (per alcune feature avanzate). Ogni funzione di configurazione è documentata con dei commenti dell'autore. Un'aspetto importante è il parametro `active = true/false` che indica se la sezione venga inclusa oppure no nella pagina home, mentre il parametro `weight =`  indica l'ordine di visualizzazione nella pagina.
+2. Nella cartella `content/home` sono presenti diverse pagine `.md`  che definiscono le varie sezioni che appaiono nella pagina home. Le varie sezioni sono basate su dei `widget`, ovvero degli elementi con particolari caratteristiche di struttura, aspetto e funzionalità definite dal tema del sito. All'interno di ogni pagina `.md` vi è una prima parte racchiuse tra `+++` (concettualmente è identico al codice YALM racchiuso tra `---` prima di un documento in KNITR) in cui sono indicate le opzioni di configurazione del widget. Successivamente è posssibile includere del testo direttamente in linguaggio Markdown o HTML (per alcune feature avanzate). Ogni funzione di configurazione è documentata con dei commenti dell'autore. Particolarmente importanti sono il parametro `active = true/false` che indica se la sezione venga inclusa oppure no nella pagina home, il parametro `weight =`  che indica l'ordine di visualizzazione nella pagina e il parametro `page_type =` che, quando presente, indica la la cartella dei contenuti mostrati (`poster`, `pubblication`, `talk_poster` etc.).
 
-
-Per conoscere di più sui widget e le loro opzioni di configurazione considera la [documentazione ufficiale](https://sourcethemes.com/academic/docs/page-builder/) di Academic. Alcuni widgets sono stati modificati appositamente per Psicostat template come ad esempio `projects.md`, `talks_posters.md` o `psicostat.md`. Altre sezioni personalizzate possono  essere create partendo dai widget di base presenti in Academic.
+Per conoscere di più sui widget e le loro opzioni di configurazione considera la [documentazione ufficiale](https://sourcethemes.com/academic/docs/page-builder/) di Academic. Alcuni widgets sono stati modificati appositamente per Psicostat template come ad esempio quelli su cui si basano le sezioni `projects.md`, `talks_posters.md` o `psicostat.md`. Altre sezioni personalizzate possono  essere create partendo dai widget di base presenti in Academic.
 
 Per collegare una nuova sezione alla barra del menù è necessario aggiungere un nuovo campo nel file `config/_default/menus.toml` dove `name` indica il nome da visualizzare e `#nome` indica il nome del file `.md` all'interno della cartella `content/home`. In questo modo quando viene premuto il collegamento in alto, il sito indirizza alla parte della home corrispondente.
 
+##  Contents folders
 
-## New contents
+Ora il sito è strutturato e organizzato. Le varie pagine del sito sono raccolte all'interno della cartella `content/` e vengono ragruppate in cartelle a seconda della tipologia di contenuto. Psicostate template oltre alla cartella `home/` presentata nella sezione precedente, si basa sulle cartelle `post/`, `project/`, `publication/`, `talk_poster/`, `teching/` e `psicostat/`. All'interno di ogni cartella troviamo uno speciale file `_index.md` che permette di creare una pagina con l'elenco di tutti i contenuti di quella specifica cartella. In Psicostat template queste pagine sono visualizzate premendo le varie sezioni dalla barra del menù. 
 
+Per collegare un nuova cartella con una nuova tipologia di contenuto alla barra del menù è necessario aggiungere un nuovo campo nel file `config/_default/menus.toml` dove `name` indica il nome da visualizzare e `nome/` indica il nome della cartella in `content/` con i nuovi contrenuti ed un file `_index.md`.
 
+Nella cartella `content/` troviamo anche la pagina `terms.md` con le note relative alla licenza dei contenuti e la pagina `privacy.md` con le note relative alla prprivacy (particolarmente importante nel caso si attivino i cookies per google alytics).
 
+## Contents types
 
-Ora il sito è strutturato e organizzato. Per creare nuovi contenuti ci sono varie modalità e quindi vi presento la modalità che mi sembra più semplice ed efficace. All'interno della cartella `content` abbiamo tutti i vari tipi di contenuti disponibili. Il sito di base fornisce degli esempi che oltre a far capire cosa e come scrivere il contenuto vero e proprio fa vedere anche come organizzare le cartelle. Ad esempio la cartella `content/publication` contiene le varie pubblicazioni (una per cartella) che verranno poi visualizzate nella sezione **Publications** che abbiamo visto prima nella cartella `content/home`. Il file `index.md` contiene alcuni elementi tipici del template per le pubblicazioni già presente nel tema. Anche qui ci sono delle info di base contenute in linguaggio YAML `---` con inoltre dei link da mettere per altro materiale come poster, database, repository e così via.
+I vari contenuti del sito si distinguono a seconda della loro tipologia. Abbiamo `project`, `post`, `publication`, `poster`, `talk` e `teaching`. Per ogni topologia esiste uno specifico [archetype](https://gohugo.io/content-management/archetypes/) che viene usato come template di base quando si creano nuovi contenuti da terminale con i [comandi](#how-to-create-a-new-content) di `hugo`. 
+
+Ogni contenuto ha una propria cartella con un file `index.md` dove in una prima parte si trovano tutte le informazioni e meta-data riguardo alla pagina  racchiusi tra `---` (linguaggio YAML) sulla base del proprio archetype. Sucessivamente si trova il contenuto della pagina direttamente in linguaggio Markdown o HTML (per alcune feature avanzate).
+
+All'interno di `content/` sono presenti numerosi esempi che oltre a far capire cosa e come scrivere il contenuto vero e proprio fanno vedere anche come organizzare le cartelle. Ad esempio la cartella `content/publication` contiene le varie pubblicazioni (una per cartella) che verranno poi visualizzate sia nella sezione della home (in numero limitato a senconda delle impostazioni) sia nella pagina **Publications**. 
 
 ### How to create a new content?
 
@@ -198,11 +205,6 @@ Tutte le modifiche locali però devono passare per altri 2 importanti step per e
 
 
 <div style="color:red">
-All'interno della cartella `theme/layouts` ci sono invece le tipologie di contenuti che possiamo creare (anche qui personalizzabili) come le pubblicazioni, i talk e cosi via.
-
-
-se non per cambiare gli [archetypes](https://gohugo.io/content-management/archetypes/). Questi non sono altro che i template che verranno utilizzati quando si useranno i [comandi](#how-to-create-a-new-content) di `hugo` per la creazione di contenuti. 
-
 Il logo e in generale tutte le immagini sono contenute nella cartella `static/img` quindi è sufficiente cambiare l'immagine e inserire il nome nei file di configurazione per cambiare anche il logo.
 
 

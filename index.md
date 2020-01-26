@@ -62,20 +62,20 @@ A questo punto è possibile modificare i file direttamente da Github per aggiorn
 
 In RStudio, per copiare la repository localmente, è necessario creare un nuovo Project (`File`->`New Project`) selezionando l'opzione `Version Control` e come sistema GIT. Successivamente è necessario indicare l'URL della Repository, il nome della cartella del Project (di default viene usato lo stesso nome della repository) e dove si vuole creare il Project.
 
-<img src="img/Rproject_version_control.png" width="33%" align="middle">
-<img src="img/Rproject_git.png" alt="fig.1" width="33%" align="middle">
-<img src="img/Rproject_name.png" alt="fig.1" width="33%" align="middle">
+<img src="img/Rproject_version_control.png" width="32%" align="middle">
+<img src="img/Rproject_git.png" alt="fig.1" width="32%" align="middle">
+<img src="img/Rproject_name.png" alt="fig.1" width="32%" align="middle">
 
 Per ottenere l'URL della repository, dalla pagina di Github premete il tasto verde `Clone or download` e copiate l'indirizzo. Una volta creato il progetto tutti la repository verrà automaticamente clonata localmente.
 
 <img src="img/Clone_Download.png" alt="fig.1" width="100%" align="middle">
 
-Per avere la repository localmente è sufficiente aprire il terminale sul PC, posizionarsi nella cartella dove si vuole mantenere il sito e utilizzare il seguente comando (mettendo il proprio `#nomeutente` e `#nomerepository`):
+In alternativa utilizzando il terminale, è sufficiente posizionarsi nella cartella dove si vuole mantenere il sito e utilizzare il seguente comando (mettendo il proprio `#nomeutente` e `#nomerepository`):
 
 ```git
 git clone https://github.com/#nomeutente/#nomerepository.git
 ```
-In alternativa utilizzando RStudio è possibile 
+
 
 
 ## Manage the website

@@ -34,13 +34,17 @@ Inoltre molte funzioni e link sono stati rimossi (o meglio semplicemente disatti
 * Un account [Netlify](https://www.netlify.com/).
 * RStudio con il pacchetto Blogdown oppure un'altra IDE ([VSCode](https://code.visualstudio.com/) super raccomandato). 
 
-VSCode è veramente un super software con un sacco di plugin per HTML, Markdown e CSS (oltre anche ad R e Python). L'integrazione con GIT e Github è molto più rapida ed efficiente di RStudio. La modalità più efficiente di usare GIT e Github rimane l'utilizzo del terminale e questo ovviamente è possibile sia con RStudio che con VSCode.
+Nel caso vogliate usare RStudio assicuratevi di aver correttamente attivato GIT in RStudio. In caso contrario, seguite le indicazioni contenute nella [documentazione ufficiale](https://support.rstudio.com/hc/en-us/articles/200532077?version=1.3.322&mode=desktop) e per ulteriori informazioni riguardanti l'utilizzo di GIT da RStudio consiglio il [presente link](http://r-pkgs.had.co.nz/git.html)
+
+In alternativa, [VSCode](https://code.visualstudio.com/) è veramente un super software con un sacco di plugin per HTML, Markdown e CSS (oltre anche ad R e Python). L'integrazione con GIT e Github è molto più rapida ed efficiente di RStudio. 
+
+Tuttavia, la modalità più efficiente di usare GIT e Github rimane l'utilizzo del terminale e questo ovviamente è possibile sia con RStudio che con VSCode.
 
 # Step by Step Guide
 
 ## One-click installer
 
-Una volta creato l'account Github e Netlify, il modo più semplice e veloce per creare il sito e collegarlo direttamente a Netlify è andare su [questo link](https://app.netlify.com/start/deploy?repository=https://github.com/filippogambarota/psicostat_template. 
+Una volta creato l'account Github e Netlify, il modo più semplice e veloce per creare il sito e collegarlo direttamente a Netlify è andare su [questo link](https://app.netlify.com/start/deploy?repository=https://github.com/filippogambarota/psicostat_template). 
 
 In questo modo si crea automaticamente una repository (copiando il template `filippogambarota/psicostat_template`) sul proprio account Github e si connette direttamente su Netlify. In fase di creazione si potrà rinominare la repository e successivamente anche il dominio del sito dal pannello di controllo di Netlify.
 
@@ -54,13 +58,25 @@ All'interno della repository c'è un file `netlify.toml` che contiene tutti i se
 
 ## Cloning locally
 
-A questo punto sarebbe necessario modificare i file direttamente da Github per aggiornare il sito. Tuttavia è molto scomodo quindi come detto in precedenza possiamo modificare i file localmente e poi fare il `push` delle modifiche a Github.
+A questo punto è possibile modificare i file direttamente da Github per aggiornare il sito. Tuttavia, l'interfaccia di Github è molto scomoda. Per gestire il sito, è quindi preferibile utilizzare RStudio o VSCode che permettono di modificare i file localmente e poi fare il `push` delle modifiche a Github.
+
+In RStudio, per copiare la repository localmente, è necessario creare un nuovo Project (`File`->`New Project`) selezionando l'opzione `Version Control` e come sistema GIT. Successivamente è necessario indicare l'URL della Repository, il nome della cartella del Project (di default viene usato lo stesso nome della repository) e dove si vuole creare il Project.
+
+<img src="img/Rproject_version_control.png" width="33%" align="middle">
+<img src="img/Rproject_git.png" alt="fig.1" width="33%" align="middle">
+<img src="img/Rproject_name.png" alt="fig.1" width="33%" align="middle">
+
+Per ottenere l'URL della repository, dalla pagina di Github premete il tasto verde `Clone or download` e copiate l'indirizzo. Una volta creato il progetto tutti la repository verrà automaticamente clonata localmente.
+
+<img src="img/Clone_Download.png" alt="fig.1" width="100%" align="middle">
 
 Per avere la repository localmente è sufficiente aprire il terminale sul PC, posizionarsi nella cartella dove si vuole mantenere il sito e utilizzare il seguente comando (mettendo il proprio `#nomeutente` e `#nomerepository`):
 
 ```git
 git clone https://github.com/#nomeutente/#nomerepository.git
 ```
+In alternativa utilizzando RStudio è possibile 
+
 
 ## Manage the website
 

@@ -1,12 +1,11 @@
-- [How to create the website?](#how-to-create-the-website)
+- [Get ready with Psicostat Template](#get-ready-with-psicostat-template)
   - [What do we need?](#what-do-we-need)
-- [Step by Step Guide](#step-by-step-guide)
+- [Installing Psicostat Template](#installing-psicostat-template)
   - [One-click installer](#one-click-installer)
-- [How to manage the website?](#how-to-manage-the-website)
   - [Cloning locally](#cloning-locally)
-  - [Manage the website](#manage-the-website)
+  - [Compile the website](#compile-the-website)
+- [How to manage the website](#how-to-manage-the-website)
   - [Website Structure](#website-structure)
-    - [Theme](#theme)
   - [First modifications](#first-modifications)
   - [Home](#home)
   - [New contents](#new-contents)
@@ -17,10 +16,9 @@
       - [Commit and Push](#commit-and-push)
   - [Useful Links](#useful-links)
 
-# How to create the website?
+# Get ready with Psicostat Template
 
-Nella mia [breve introduzione](https://github.com/filippogambarota/hugo_tutorial) ad Hugo avevo suggerito di utilizzare **blogdown** e quindi RStudio per creare da zero il sito. Tuttavia essendo che partiremo da un **template modificato** utilizzeremo un approccio leggermente diverso.
-Questo template è un semplice adattamento del tema **Academic** con alcune modifiche estetiche e di struttura:
+Psicostat template permette di creare un proprio sito personale che abbia un tema comune per tutti i membri del gruppo [Psicostat](http://ip146179.psy.unipd.it/psicostat/web/). Questo template si basa su un adattamento del tema [Academic](https://sourcethemes.com/academic/), basato su Hugo, con alcune modifiche estetiche e di struttura:
 
 * Sezioni per post, talk, poster e insegnamenti
 * Una sezione specifica per Psicostat con link al sito web, feed di Twitter aggiornato e non per ultimo il nostro motto.
@@ -29,24 +27,28 @@ Inoltre molte funzioni e link sono stati rimossi (o meglio semplicemente disatti
 
 ## What do we need?
 
+Per installare Psicostat template è necessario avere
+
 * [GIT](https://git-scm.com/) e [Hugo](https://gohugo.io/) installati sul PC
 * Un account [Github](https://github.com/).
 * Un account [Netlify](https://www.netlify.com/).
 * RStudio con il pacchetto Blogdown oppure un'altra IDE ([VSCode](https://code.visualstudio.com/) super raccomandato). 
 
-Nel caso vogliate usare RStudio assicuratevi di aver correttamente attivato GIT in RStudio. In caso contrario, seguite le indicazioni contenute nella [documentazione ufficiale](https://support.rstudio.com/hc/en-us/articles/200532077?version=1.3.322&mode=desktop) e per ulteriori informazioni riguardanti l'utilizzo di GIT da RStudio consiglio il [presente link](http://r-pkgs.had.co.nz/git.html). Inoltre è consigliato installare il pacchetto **blogdown** (`install.packages("blogdown")`).
+Nel caso vogliate usare RStudio assicuratevi di aver correttamente attivato GIT in RStudio. In caso contrario, seguite le indicazioni contenute nella [documentazione ufficiale](https://support.rstudio.com/hc/en-us/articles/200532077?version=1.3.322&mode=desktop) e per ulteriori informazioni riguardanti l'utilizzo di GIT da RStudio suggerisco il [presente link](http://r-pkgs.had.co.nz/git.html). Inoltre è consigliato installare il pacchetto **blogdown** (`install.packages("blogdown")`).
 
 In alternativa, [VSCode](https://code.visualstudio.com/) è veramente un super software con un sacco di plugin per HTML, Markdown e CSS (oltre anche ad R e Python). L'integrazione con GIT e Github è molto più rapida ed efficiente di RStudio. 
 
 Tuttavia, la modalità più efficiente di usare GIT e Github rimane l'utilizzo del terminale e questo ovviamente è possibile sia con RStudio che con VSCode.
 
-# Step by Step Guide
+# Installing Psicostat Template
+
+Nella mia [breve introduzione](https://github.com/filippogambarota/hugo_tutorial) ad Hugo avevo suggerito di utilizzare **blogdown** e quindi RStudio per creare da zero il sito. Tuttavia, essendo che partiremo da un template modificato, utilizzeremo un approccio leggermente diverso. 
 
 ## One-click installer
 
 Una volta creato l'account Github e Netlify, il modo più semplice e veloce per creare il sito e collegarlo direttamente a Netlify è andare su [questo link](https://app.netlify.com/start/deploy?repository=https://github.com/filippogambarota/psicostat_template). 
 
-In questo modo si crea automaticamente una repository (copiando il template `filippogambarota/psicostat_template`) sul proprio account Github e si connette direttamente su Netlify. In fase di creazione si potrà rinominare la repository e successivamente anche il dominio del sito dal pannello di controllo di Netlify.
+In questo modo si crea automaticamente una repository (copiando il template `filippogambarota/psicostat_template`) sul proprio account Github che si connette direttamente su Netlify. In fase di creazione si potrà rinominare la repository e successivamente anche il dominio del sito dal pannello di controllo di Netlify.
 
 All'interno della repository c'è un file `netlify.toml` che contiene tutti i settaggi che Netlify userà per i deploying. Di conseguenza non dovrebbe essere necessario modificare nessuna impostazione. Nella `fig.1` è si vede il pannello di controllo con il sito creato (se il nome non è stato modificato il sito avrà un nome strano autogenerato). Cliccando sul sito si accede (fig.2) al pannello di controllo dove modificare le impostazioni (non consigliato) e il dominio (`domain settings`).
 
@@ -54,8 +56,6 @@ All'interno della repository c'è un file `netlify.toml` che contiene tutti i se
 <div class="row text-center"><img src="img/netlify1.png" alt="fig.1" width="500" align="middle"></div>
 
 <div class="row text-center"><img src="img/netlify2.png" alt="fig.2" width="300" align="middle"></div>
-
-# How to manage the website?
 
 ## Cloning locally
 
@@ -79,16 +79,9 @@ In alternativa utilizzando il terminale, è sufficiente posizionarsi nella carte
 git clone https://github.com/#nomeutente/#nomerepository.git
 ```
 
+## Compile the website
 
-
-## Manage the website
-
-
-La documentazione di [Hugo](https://gohugo.io/documentation/) e del [tema Academic](https://sourcethemes.com/academic/docs/) sono veramente ottime e complete. Tuttavia, inizialmente la  struttura del sito risulta coplessa poichè vengono utilizzati molti files con diversi linguaggi (GO, TOML, HTML, CSS e Markdown).
-
-Di seguito vengono quindi riportate le informazioni essenziali rispetto alla struttura, i comandi e le funzioni per inserire i propri dati e gestire quotidinamente il sito. Per chi fosse interessato ad approfondire questi aspetti oppure personalizzare ulteriormente il template, ulteriori link sono indicati nella documentazione e le principali risorse sono elencate nella [sezione finale](#useful-links).
-
-Prima di cominciare a modificare il sito, ci sono due modi per capire se la procedura finora è andata a buon fine:
+Prima di cominciare a modificare il sito, ci sono diversi modi per capire se la procedura finora è andata a buon fine:
 
 * Se il sito è online all'indirizzo di Netlify
 * Da Rstudio premere il comando `Addins -> Serve Site` per creare e visualizzare automaticamente il sito.
@@ -101,24 +94,31 @@ hugo server
 
 Il fatto che il sito sia compilato senza errori e venga visualizzato significa che non ci sono problemi nella struttura.
 
+# How to manage the website?
+
+La documentazione di [Hugo](https://gohugo.io/documentation/) e del [tema Academic](https://sourcethemes.com/academic/docs/) sono veramente ottime e complete. Tuttavia, inizialmente la  struttura del sito risulta coplessa poichè vengono utilizzati molti file con diversi linguaggi (GO, TOML, HTML, CSS e Markdown).
+
+Di seguito vengono quindi riportate le informazioni essenziali rispetto alla struttura, i comandi e le funzioni per inserire i propri dati e gestire quotidinamente il sito. Per chi fosse interessato ad approfondire questi aspetti oppure personalizzare ulteriormente il template, ulteriori link sono indicati nella documentazione e le principali risorse sono elencate nella [sezione finale](#useful-links).
+
+
+
 ## Website Structure
 
-Nella cartella principale del sito troviamo:
+All'interno della repository troviamo diverse cartelle e relativi file che permettono di creare il proprio sito sito. I file e cartelle di interesse che permettono di inserire i propri dati e contenuti nel sito sono:
 
 * Il file `.Rproj` che permette di aprire e gestire il sito con RStudio essendo che è stato creato inizialmente con il pacchetto **blogdown**.
 * Il file `config.toml` che contiene la configurazione di base del sito.
-* Il file `netlify.toml` che contiene i settaggi per il deploying online
-* La cartella `content` che contiene tutti i file e le immagini delle varie sezioni del sito del sito. Questa cartella sarà quella che maggiormente verrà modificata.
-* La cartella `static` che contiene file e materiale che si vogliono visualizzare nel sito come ad esempio il proprio **CV**.
-* La cartella `data` che contiene i file `.toml` del tema modificato,che determinano colori e  fonts dell'intero sito.
+* Il file `netlify.toml` che contiene i settaggi per il deploying online.
 * La cartella `config` che contiene altri file di configurazione di base (simili a `config.toml`) del sito come la **lingua**, tutte le **informazioni di contatto**, le eventuali **mappe** da visualizzare, i **link ai social network** e sopratutto la **struttura del menu home**.
-* La cartella `public` contiene la versione compilata del sito che viene mandata online (in altri termini le pagine scritte in Markdown o RMarkdown vengono compilate in HTML e inserite nella cartella per la visualizzazione da browser).
+* La cartella `data` che contiene i file `.toml` del tema modificato,che determinano colori e  fonts dell'intero sito.
+* La cartella `content` che contiene tutti i file e le immagini delle varie sezioni del sito del sito (projects, posts, talks, posters etc.). Questa cartella sarà quella che maggiormente verrà modificata.
+* La cartella `static` che contiene ulteriori file e materiale che vogliamo visualizzare nel sito (ad esempio il proprio **CV**).
 
-### Psicostat template and Academic Theme 
+All'interno della cartella principale ci sono altri file e cartelle che contengono tutte le informazioni riguardanti la struttura ed il funzionamento del sito. In particolare abbiamo:
 
-La cartella `theme` contiene la struttura di default del tema Academic. Questa cartella non va assolutamente modificata.
-
-Le restanti cartelle (`archetypes`, `assets`, `i18n` e `layouts`) contengono i file utilizzati per definire i cambiamenti del template psicostat rispetto al tema Academic. Anche questi file non andrebbero modificati a meno che non si voglia modificare e personalizzare il funzionamento del sito.
+* La cartella `public` che contiene la versione compilata del sito che viene mandata online (in altri termini le pagine scritte in Markdown o RMarkdown vengono compilate in HTML e inserite nella cartella per la visualizzazione da browser). Questa cartella viene creata in automatico quando si compila il sito e non va modificata.
+* la cartella `theme`  che contiene la struttura di default del tema Academic. Questa cartella non va assolutamente modificata.
+* Le restanti cartelle (`archetypes`, `assets`, `i18n` e `layouts`) che contengono i file utilizzati per definire i cambiamenti del template psicostat rispetto al tema Academic. Anche questi file non andrebbero modificati a meno che non si voglia modificare e personalizzare la struttura o il funzionamento del sito.
 
 
 <div style="color:red">
@@ -126,7 +126,6 @@ All'interno della cartella `theme/layouts` ci sono invece le tipologie di conten
 
 
 se non per cambiare gli [archetypes](https://gohugo.io/content-management/archetypes/). Questi non sono altro che i template che verranno utilizzati quando si useranno i [comandi](#how-to-create-a-new-content) di `hugo` per la creazione di contenuti. 
-
 </div>
 
 

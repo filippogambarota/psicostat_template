@@ -100,11 +100,11 @@ La documentazione di [Hugo](https://gohugo.io/documentation/) e del [tema Academ
 
 Di seguito vengono quindi riportate le informazioni essenziali rispetto alla struttura, i comandi e le funzioni per inserire i propri dati e gestire quotidinamente il sito. Per chi fosse interessato ad approfondire questi aspetti oppure personalizzare ulteriormente il template, ulteriori link sono indicati nella documentazione e le principali risorse sono elencate nella [sezione finale](#useful-links).
 
+Prima di iniziare a modificare il sito web è buona norma compilare il sito con il comando `Serve Site` di Rstudio o da terminale eseguire `hugo server` (vedi sezione [Compile the website](#compile-the-website)). Questo, oltre a controllare la struttura, permette di avere un indirizzo locale dove tutte le modifiche vengono visualizzate in tempo reale. Così una volta soddisfatti possiamo effettuare il **commit** ed il **push** attraverso GIT.
 
+## Website structure
 
-## Website Structure
-
-All'interno della repository troviamo diverse cartelle e relativi file che permettono di creare il proprio sito sito. I file e cartelle di interesse che permettono di inserire i propri dati e contenuti nel sito sono:
+All'interno della repository troviamo diverse cartelle e relativi file che permettono di creare il proprio sito. I file e cartelle di interesse che permettono di inserire i propri dati e contenuti nel sito sono:
 
 * Il file `.Rproj` che permette di aprire e gestire il sito con RStudio essendo che è stato creato inizialmente con il pacchetto **blogdown**.
 * Il file `config.toml` che contiene la configurazione di base del sito.
@@ -120,26 +120,31 @@ All'interno della cartella principale ci sono altri file e cartelle che contengo
 * la cartella `theme`  che contiene la struttura di default del tema Academic. Questa cartella non va assolutamente modificata.
 * Le restanti cartelle (`archetypes`, `assets`, `i18n` e `layouts`) che contengono i file utilizzati per definire i cambiamenti del template psicostat rispetto al tema Academic. Anche questi file non andrebbero modificati a meno che non si voglia modificare e personalizzare la struttura o il funzionamento del sito.
 
+## Settings and personal information
 
-<div style="color:red">
-All'interno della cartella `theme/layouts` ci sono invece le tipologie di contenuti che possiamo creare (anche qui personalizzabili) come le pubblicazioni, i talk e cosi via.
+I file da modificare per inserire le proprie informazioni riportano molti commenti per chiarire quali sono le varie funzioni. E' consigliato non cancellare nessun commento e rispecchiare la stuttura degli esempi presentati. I file da modificare sono:
 
+1. `config.toml`. Si devono inserire il proprio nome e cognome sia nel campo `title` che nel campo `copyright`. Le altre opzioni non vanno cambiate.
+2. `content/authors/admin/_index.md`. Qui vanno inserite le informazioni del proprio profilo che sono visualizzate nella homepage. Dato che il sito supporta diversi autori con diversi profili se si modifica l'autore principale (`admin`) ogni volta che in un post o pubblicazione inseriamo `admin` come autore automaticamente si farà riferimento al proprio profilo con le informazioni associate. Ci sono vari campi come `bio` (breve descrizione che viene visualizzata al termine dei contenuti), `education`, `interests`, informazioni personali e link social con le icone. Nel caso in cui non si voglia includere una parte è preferibile commentarla invece che eliminarla. Al termine del file dove è presente il testo "Nelson Bighetti..." è possibile inserire la propria biografia che è visualizzata nella homepage. **Attenzione** non rimuovere la parte `[Curriculum Vitae](files/cv.pdf)` che crea il link al propri CV.
+3. `content/authors/admin/avatar.jpg` sostituire con la propria immagine profilo che appare nella homepage. Il nome dell'immagine deve rimanere `avatar.jpg`.
+4. `config/_default/params.toml` Si possono definire ulteriori opzioni riguardanti il sito. In particolare, nella sezione `Contact details` vanno inserite le proprie informazioni quali email e indirizzo. Nel caso in cui non si voglia includere una parte è preferibile commentarla invece che eliminarla. Altre opzioni che potrebbero interessare sono l'utilizzo di google analytics o l'attivazione di commenti. Per ulteriori informazioni consultare la documentazione ufficiale di [Academic](https://sourcethemes.com/academic/docs/customization/#analytics).
+5. `static/files/cv.pdf` sostituire il proprio CV in formato pdf mantenendo il nome del file `cv.pdf`.
 
-se non per cambiare gli [archetypes](https://gohugo.io/content-management/archetypes/). Questi non sono altro che i template che verranno utilizzati quando si useranno i [comandi](#how-to-create-a-new-content) di `hugo` per la creazione di contenuti. 
-</div>
-
-
-## First modifications
-
-Un buon modo di modificare il sito web è quello di compilare il sito con il comando `Serve Site` di Rstudio o da terminale eseguire `hugo server`. Questo, oltre a controllare la struttura, permette di avere un indirizzo locale dove tutte le modifiche vengono visualizzate in tempo reale. Così una volta soddisfatti possiamo effettuare il **commit** ed il **push**.
-
-Le prime cose che consiglio di fare sono:
-
-1. Aprire i vari file di configurazione `.toml` e cambiare le impostazioni desiderate come contatti, link e nome del sito. Il logo e in generale tutte le immagini sono contenute nella cartella `static/img` quindi è sufficiente cambiare l'immagine e inserire il nome nei file di configurazione per cambiare anche il logo. Se non è necessario per il momento non cambiare la struttura della home nel file `menus.toml`.
-2. Prima dei contenuti veri e propri è utile aggiornare il proprio profilo come autore. Essendo che il sito supporta diversi autori con diversi profili se si modifica l'autore principale (`admin`) ogni volta che in un post o pubblicazione inseriamo `admin` come autore automaticamente si farà riferimento a quel profilo con le informazioni associate. Per modificare il profilo autore andare su `content/authors/admin/_index.md`. Ci sono varie informazioni da inserire come i link social con le icone.
-3. E' inoltre possibile inserire l'immagine del profilo che appare nella pagina personale sostituendo e rinominando la foto come `avatar.jpg`.
 
 ## Home
+
+Per quanto riguarda i contenuti del sito
+
+
+1. `config/_default/menus.toml` contiene le informazioni riguardanti la barra del menù. Nel caso in cui non si voglia includere una sezione è preferibile commentarla invece che eliminarla.
+2.
+
+
+1. Aprire i vari file di configurazione `.toml` e cambiare le impostazioni desiderate come contatti, link e nome del sito. Il logo e in generale tutte le immagini sono contenute nella cartella `static/img` quindi è sufficiente cambiare l'immagine e inserire il nome nei file di configurazione per cambiare anche il logo. Se non è necessario per il momento non cambiare la struttura della home nel file `menus.toml`.
+2. Prima dei contenuti veri e propri è utile aggiornare il proprio profilo come autore.  Per modificare il profilo autore andare su `content/authors/admin/_index.md`. Ci sono varie informazioni da inserire come i link social con le icone.
+3. E' inoltre possibile inserire l'immagine del profilo che appare nella pagina personale sostituendo e rinominando la foto come 
+
+
 
 A questo punto le informazioni di base nostre e del sito sono inserite. Il prossimo passo è capire il funzionamento della schermata home. Nella cartella `content/home` sono contenute le varie pagine `.md` con le informazioni che appaiono nella schermata home.
 
@@ -153,6 +158,14 @@ Nel file `config/_default/menus.toml` abbiamo le sezioni che vengono visualizzat
 Ovviamente è possibile creare una sezione con un link esterno (un sito web) oppure,come indicato in fondo al file `menus.toml` ad un CV in formato pdf.
 
 ## New contents
+
+<div style="color:red">
+All'interno della cartella `theme/layouts` ci sono invece le tipologie di contenuti che possiamo creare (anche qui personalizzabili) come le pubblicazioni, i talk e cosi via.
+
+
+se non per cambiare gli [archetypes](https://gohugo.io/content-management/archetypes/). Questi non sono altro che i template che verranno utilizzati quando si useranno i [comandi](#how-to-create-a-new-content) di `hugo` per la creazione di contenuti. 
+</div>
+
 
 Ora il sito è strutturato e organizzato. Per creare nuovi contenuti ci sono varie modalità e quindi vi presento la modalità che mi sembra più semplice ed efficace. All'interno della cartella `content` abbiamo tutti i vari tipi di contenuti disponibili. Il sito di base fornisce degli esempi che oltre a far capire cosa e come scrivere il contenuto vero e proprio fa vedere anche come organizzare le cartelle. Ad esempio la cartella `content/publication` contiene le varie pubblicazioni (una per cartella) che verranno poi visualizzate nella sezione **Publications** che abbiamo visto prima nella cartella `content/home`. Il file `index.md` contiene alcuni elementi tipici del template per le pubblicazioni già presente nel tema. Anche qui ci sono delle info di base contenute in linguaggio YAML `---` con inoltre dei link da mettere per altro materiale come poster, database, repository e così via.
 

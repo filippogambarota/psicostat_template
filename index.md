@@ -34,7 +34,7 @@ Inoltre molte funzioni e link sono stati rimossi (o meglio semplicemente disatti
 * Un account [Netlify](https://www.netlify.com/).
 * RStudio con il pacchetto Blogdown oppure un'altra IDE ([VSCode](https://code.visualstudio.com/) super raccomandato). 
 
-Nel caso vogliate usare RStudio assicuratevi di aver correttamente attivato GIT in RStudio. In caso contrario, seguite le indicazioni contenute nella [documentazione ufficiale](https://support.rstudio.com/hc/en-us/articles/200532077?version=1.3.322&mode=desktop) e per ulteriori informazioni riguardanti l'utilizzo di GIT da RStudio consiglio il [presente link](http://r-pkgs.had.co.nz/git.html)
+Nel caso vogliate usare RStudio assicuratevi di aver correttamente attivato GIT in RStudio. In caso contrario, seguite le indicazioni contenute nella [documentazione ufficiale](https://support.rstudio.com/hc/en-us/articles/200532077?version=1.3.322&mode=desktop) e per ulteriori informazioni riguardanti l'utilizzo di GIT da RStudio consiglio il [presente link](http://r-pkgs.had.co.nz/git.html). Inoltre è consigliato installare il pacchetto **blogdown** (`install.packages("blogdown")`).
 
 In alternativa, [VSCode](https://code.visualstudio.com/) è veramente un super software con un sacco di plugin per HTML, Markdown e CSS (oltre anche ad R e Python). L'integrazione con GIT e Github è molto più rapida ed efficiente di RStudio. 
 
@@ -50,9 +50,10 @@ In questo modo si crea automaticamente una repository (copiando il template `fil
 
 All'interno della repository c'è un file `netlify.toml` che contiene tutti i settaggi che Netlify userà per i deploying. Di conseguenza non dovrebbe essere necessario modificare nessuna impostazione. Nella `fig.1` è si vede il pannello di controllo con il sito creato (se il nome non è stato modificato il sito avrà un nome strano autogenerato). Cliccando sul sito si accede (fig.2) al pannello di controllo dove modificare le impostazioni (non consigliato) e il dominio (`domain settings`).
 
-<img src="img/netlify1.png" alt="fig.1" width="500" align="middle">
 
-<img src="img/netlify2.png" alt="fig.2" width="300" align="middle">
+<div class="row text-center"><img src="img/netlify1.png" alt="fig.1" width="500" align="middle"></div>
+
+<div class="row text-center"><img src="img/netlify2.png" alt="fig.2" width="300" align="middle"></div>
 
 # How to manage the website?
 
@@ -62,13 +63,15 @@ A questo punto è possibile modificare i file direttamente da Github per aggiorn
 
 In RStudio, per copiare la repository localmente, è necessario creare un nuovo Project (`File`->`New Project`) selezionando l'opzione `Version Control` e come sistema GIT. Successivamente è necessario indicare l'URL della Repository, il nome della cartella del Project (di default viene usato lo stesso nome della repository) e dove si vuole creare il Project.
 
-<img src="img/Rproject_version_control.png" width="32%" align="middle">
-<img src="img/Rproject_git.png" alt="fig.1" width="32%" align="middle">
-<img src="img/Rproject_name.png" alt="fig.1" width="32%" align="middle">
+<div class="row text-center">
+<img src="img/Rproject_version_control.png" width="30%" align="middle">
+<img src="img/Rproject_git.png"  width="30%" align="middle">
+<img src="img/Rproject_name.png"  width="30%" align="middle">
+</div>
 
 Per ottenere l'URL della repository, dalla pagina di Github premete il tasto verde `Clone or download` e copiate l'indirizzo. Una volta creato il progetto tutti la repository verrà automaticamente clonata localmente.
 
-<img src="img/Clone_Download.png" alt="fig.1" width="100%" align="middle">
+<div class="row text-center"><img src="img/Clone_Download.png" width="90%" align="middle"></div>
 
 In alternativa utilizzando il terminale, è sufficiente posizionarsi nella cartella dove si vuole mantenere il sito e utilizzare il seguente comando (mettendo il proprio `#nomeutente` e `#nomerepository`):
 
@@ -81,18 +84,22 @@ git clone https://github.com/#nomeutente/#nomerepository.git
 ## Manage the website
 
 
-La documentazione di Hugo e del tema Academic sono veramente ottime e complete tuttavia essendo personalmente ad un livello molto base le ho trovate leggermente complesse e dispersive.
+La documentazione di [Hugo](https://gohugo.io/documentation/) e del [tema Academic](https://sourcethemes.com/academic/docs/) sono veramente ottime e complete. Tuttavia, inizialmente la  struttura del sito risulta coplessa poichè vengono utilizzati molti files con diversi linguaggi (GO, TOML, HTML, CSS e Markdown).
 
-In questo caso quindi vorrei riportare quelle informazioni essenziali rispetto alla struttura, i comandi e le funzioni per gestire quotidinamente. Se queste informazioni non dovessero essere abbastanza comunque ci saranno dei link alla documentazione e anche una [sezione finale](#useful-links) con le principali risorse.
+Di seguito vengono quindi riportate le informazioni essenziali rispetto alla struttura, i comandi e le funzioni per inserire i propri dati e gestire quotidinamente il sito. Per chi fosse interessato ad approfondire questi aspetti oppure personalizzare ulteriormente il template, ulteriori link sono indicati nella documentazione e le principali risorse sono elencate nella [sezione finale](#useful-links).
 
 Prima di cominciare a modificare il sito, ci sono due modi per capire se la procedura finora è andata a buon fine:
-* Se il sito è online all'indirizzo di Netlify
-* Dopo aver clonato la repository localmente posizionarsi nella `root` della cartella e utilizzare il seguente comando da terminale:
 
-```
+* Se il sito è online all'indirizzo di Netlify
+* Da Rstudio premere il comando `Addins -> Serve Site` per creare e visualizzare automaticamente il sito.
+<div class="row text-center"> <img src="img/serve_site.png" width="44%" align="middle"> </div>
+
+* Da terminale, dopo aver clonato la repository localmente, posizionarsi nella `root` della cartella e utilizzare il seguente comando che permette di compilare il sito e fornisce un indirizzo locale per vedere il funzionamento.:
+``` terminal
 hugo server
 ```
-Questo compila il sito e fornisce un indirizzo locale per vedere il funzionamento. Il fatto che si compili senza errori significa che non ci sono problemi nella struttura.
+
+Il fatto che il sito sia compilato senza errori e venga visualizzato significa che non ci sono problemi nella struttura.
 
 ## Website Structure
 

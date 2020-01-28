@@ -5,7 +5,7 @@
   - [Cloning locally](#cloning-locally)
   - [Compile the website](#compile-the-website)
 - [How to manage the website](#how-to-manage-the-website)
-  - [Website Structure](#website-structure)
+  - [Website structure](#website-structure)
   - [Settings and personal information](#settings-and-personal-information)
   - [Home](#home)
   - [Contents folders](#contents-folders)
@@ -96,6 +96,10 @@ Il fatto che il sito sia compilato senza errori e venga visualizzato significa c
 
 # How to manage the website
 
+<span style="color:RED font-weight:bold">Nota importante su Blogdown e Hugo</span>:
+> La gestione del sito può essere eseguita da qualunque editor di testo. **Blogdown** è un ottimo pacchetto che sostanzialmente fornisce una struttura semplificata (anche con addins grafici), con apposite funzioni sviluppate in R, al codice di Hugo. Tuttavia, per la [creazione di nuovo contenuto](#how-to-create-a-new-content) le funzioni di Hugo sono da preferire sia per comodità e anche perchè l'aver modificato l'archetipo rende più instabile l'interfaccia grafica che fornisce Blogdown. Allo stesso modo la funzione `serve Site` e `hugo server` sono analoghe e la scelta è assolutamente in base alla preferenza personale.
+> L'unica differenza reale tra RStudio e VSCode (o altri programmi) è la capacità di gestire file `RMarkdown` integrando quindi anche chunk di codice da compilare. VSCode dall'altra fornisce numerosi plugin avanzati per gestire tutti i file con suggerimento di codice, segnalazione di errori di sintassi per tutti i file importanti del sito (`.toml`, `.html`, `.css`, `.yaml`, etc.)
+
 La documentazione di [Hugo](https://gohugo.io/documentation/) e del [tema Academic](https://sourcethemes.com/academic/docs/) sono veramente ottime e complete. Tuttavia, inizialmente la  struttura del sito risulta coplessa poichè vengono utilizzati molti file con diversi linguaggi (GO, TOML, HTML, CSS e Markdown).
 
 Di seguito vengono quindi riportate le informazioni essenziali rispetto alla struttura, i comandi e le funzioni per inserire i propri dati e gestire quotidinamente il sito. Per chi fosse interessato ad approfondire questi aspetti oppure personalizzare ulteriormente il template, ulteriori link sono indicati nella documentazione e le principali risorse sono elencate nella [sezione finale](#useful-links).
@@ -147,7 +151,7 @@ Per collegare una nuova sezione alla barra del menù è necessario aggiungere un
 
 ##  Contents folders
 
-Ora il sito è strutturato e organizzato. Le varie pagine del sito sono raccolte all'interno della cartella `content/` e vengono ragruppate in cartelle. Psicostate template oltre alla cartella `home/` presentata nella sezione precedente, si basa sulle cartelle `post/`, `project/`, `publication/`, `talk_poster/`, `teching/` e `psicostat/`. All'interno di ogni cartella troviamo uno speciale file `_index.md` che permette di creare una pagina con l'elenco di tutti i contenuti di quella specifica cartella. In Psicostat template queste pagine sono visualizzate premendo le varie sezioni dalla barra del menù. 
+Ora il sito è strutturato e organizzato. Le varie pagine del sito sono raccolte all'interno della cartella `content/` e vengono ragruppate in cartelle. Psicostate template oltre alla cartella `home/` presentata nella sezione precedente, si basa sulle cartelle `post/`, `project/`, `publication/`, `talk_poster/`, `teaching/` e `psicostat/`. All'interno di ogni cartella troviamo uno speciale file `_index.md` che permette di creare una pagina con l'elenco di tutti i contenuti di quella specifica cartella. In Psicostat template queste pagine sono visualizzate premendo le varie sezioni dalla barra del menù. 
 
 Per collegare un nuova cartella alla barra del menù è necessario aggiungere un nuovo campo nel file `config/_default/menus.toml` dove `name` indica il nome da visualizzare e `nome/` indica il nome della cartella in `content/` con i nuovi contrenuti ed un file `_index.md`.
 
@@ -230,9 +234,9 @@ Ci sono due fonti principali per approfondire la documentazione:
 * [Documentazione Academic Theme](https://sourcethemes.com/academic/docs/)
 
 La documentazione di Hugo è molto approfondita (e anche complessa). Per gestire e modificare questo template ho trovato sufficiente quella del tema Academic e queste pagine della documentazione di Hugo:
-* https://gohugo.io/content-management/archetypes/ (Archetipi)
-* https://gohugo.io/content-management/types/ (Modificare e aggiungere tipologie di contenuti collegati agli archetipi)
-* https://gohugo.io/commands/hugo/ (i comandi di hugo in particolare `hugo server` e le varie tipologie di `hugo new`)
+* [Documentazione Archetipi](https://gohugo.io/content-management/archetypes/)
+* [Modificare e aggiungere tipologie di contenuti collegati agli archetipi](https://gohugo.io/content-management/types/)
+* [I principali comandi di Hugo](https://gohugo.io/commands/hugo/)
 
 Altre risorse utili sono:
 * La [repository Github](https://github.com/gcushen/hugo-academic) di Academic in particolare la sezione [issues](https://github.com/gcushen/hugo-academic/issues) perchè ci sono molti problemi comuni.

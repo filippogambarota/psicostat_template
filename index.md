@@ -96,7 +96,7 @@ Il fatto che il sito sia compilato senza errori e venga visualizzato significa c
 
 # How to manage the website
 
-<span style="color:RED font-weight:bold">Nota importante su Blogdown e Hugo</span>:
+<span style="color:RED">Nota importante su Blogdown e Hugo</span>:
 > La gestione del sito può essere eseguita da qualunque editor di testo. **Blogdown** è un ottimo pacchetto che sostanzialmente fornisce una struttura semplificata (anche con addins grafici), con apposite funzioni sviluppate in R, al codice di Hugo. Tuttavia, per la [creazione di nuovo contenuto](#how-to-create-a-new-content) le funzioni di Hugo sono da preferire sia per comodità e anche perchè l'aver modificato l'archetipo rende più instabile l'interfaccia grafica che fornisce Blogdown. Allo stesso modo la funzione `serve Site` e `hugo server` sono analoghe e la scelta è assolutamente in base alla preferenza personale.
 > L'unica differenza reale tra RStudio e VSCode (o altri programmi) è la capacità di gestire file `RMarkdown` integrando quindi anche chunk di codice da compilare. VSCode dall'altra fornisce numerosi plugin avanzati per gestire tutti i file con suggerimento di codice, segnalazione di errori di sintassi per tutti i file importanti del sito (`.toml`, `.html`, `.css`, `.yaml`, etc.)
 

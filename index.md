@@ -16,7 +16,7 @@
 - [Save and upload all modifications](#save-and-upload-all-modifications)
 - [Random Tips](#random-tips)
   - [Deployment](#deployment)
-  - [Personal Publication](#personal-publication)
+  - [Personal Publications](#personal-publications)
 - [Useful Links](#useful-links)
 
 # Get ready with Psicostat Template
@@ -236,7 +236,7 @@ git push #mandare tutte le modifiche a Github
 
 Il sito si può anche mandare online attraverso **Github Pages** come descritto [qui](https://sourcethemes.com/academic/docs/deployment/) tuttavia gli stessi autori del tema suggeriscono **Netlify** per la comodità di gestire in automatico tutte le modifiche.
 
-## Personal Publication
+## Personal Publications
 
 I **comandi di Hugo** e l'**archetipo** per le pubblicazioni rendono l'inserimento delle proprie pubblicazioni molto semplice tuttavia comunque sono da inserire singolarmente. Per automatizzare il processo è disponibile ufficialmente un [script di Python](https://sourcethemes.com/academic/docs/managing-content/#create-a-publication) che una volta installato permette di inserire automaticamente tutte le pubblicazioni contenute in un file `.bib` ovviamente secondo il template impostato.
 Nella documentazione comunque consigliano di revisionare il risultato (e anche il file `.bib`) essendo il tool ancora in beta. Per questo il tool non è installato di default nel tema ma come indicato nella documentazione è sufficiente una linea di codice da terminale (avendo python installato).

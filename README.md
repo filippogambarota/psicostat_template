@@ -1,6 +1,6 @@
 # Website Template for Psicostat
 
-<img src="img/Psicostat_hexagon.svg" width="130" align="left" />
+<img src="static/img/Psicostat_hexagon.svg" width="130" align="left" />
 
 This repository contains the website template created for members of [Psicostat](https://psicostat-template.netlify.com/). The idea is to simplify and adapt the awesome [Academic](https://sourcethemes.com/academic/) theme for [Hugo](https://gohugo.io/). There are some graphical and structural customization in particular for making the website clean and simple. The main goal is to have a personal website for academic needs but other sections and functions can be easily added.
 

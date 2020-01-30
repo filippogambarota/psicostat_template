@@ -64,7 +64,7 @@ subtitle = ""
   
   </br>
   <a href="https://www.tandfonline.com/doi/full/10.1080/00031305.2019.1583913">
-    <img src="img/atom.svg" width="400" align="center">
+    <img src="atom.svg" width="400" align="center">
     </a>
 
 </div>

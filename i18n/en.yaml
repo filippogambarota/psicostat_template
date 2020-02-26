@@ -199,6 +199,9 @@
 
 - id: projects
   translation: Projects
+  
+- id: talks_posters
+  translation: Talks and Posters
 
 # Search
 

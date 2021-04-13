@@ -49,7 +49,7 @@ subtitle = ""
 +++
 
 <div style="float: left; width: 30%;">
-  <img class= logo src="img/Psicostat_hexagon.svg" width="200" align="middle">
+  <img class= logo src="img/hex_psicostat.png" width="200" align="middle">
 </div>
 
 I'm part of <font color="#990000"> <b> Psicostat </b> </font>. We are an interdisciplinary research group interested in **Psychology** and **Statistics** working at the University of Padua.

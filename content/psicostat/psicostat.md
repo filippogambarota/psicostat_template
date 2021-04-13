@@ -54,7 +54,7 @@ subtitle = ""
 
 <div style="float: left; width: 40%; font-size:95%; padding-left:50px" align="justify">
     <div align="center">
-    <img src="Psicostat_hexagon.svg" width="200" align="center">
+    <img src="hex_psicostat.png" width="200" align="center">
     </div>
 
   </br>
